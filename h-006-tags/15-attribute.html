@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>attribute</title>
+    <style>
+        #main {
+            color: red;
+            font-size: 20px;
+        }
+        
+        #second {
+            color: purple;
+        }
+        
+        .paragraph {
+            background-color: skyblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>id, class</h3>
+
+    <p id='main' class="paragraph">main paragraph</p>
+    <p id='second' class="paragraph">second paragraph</p>
+
+    <script>
+        var p1 = document.getElementById('main');
+        console.log(p1.textContent);
+
+        var p = document.getElementsByClassName('paragraph');
+
+        for (var i = 0; i < p.length; i++) {
+            p[i].textContent = p[i].textContent + ' appended by JAVASCRIPT';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.container {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: space-around;
+}
+
+.i1 {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* It specifies the "flex shrink factor", which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.*/
+    /* When omitted, it is set to 1 and the flex shrink factor is multiplied by the flex basis. */
+    
+    flex: 1 1 auto;
+    /* value: none, flex-grow flex-shrink flex-basis */
+    /* value 'none' means 0 0 auto */
+}
+
+.i2, .i3, .i4, .i5, .i6 {
+    flex: 1 1 300px;
+}

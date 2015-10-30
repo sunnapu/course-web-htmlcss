@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form 1</title>
+</head>
+
+<body>
+    <h4>progress</h4>
+    <progress min="0" max="100" value="20" name='progress'></progress>
+    <h4>meter</h4>
+    <meter min="0" max="100" value="33" name='meterValue'></meter>
+    <input type="submit" value="submit">
+
+    <!-- progress and meter have different purpose for sementic -->
+
+    <script>
+        // html -> html engine -> DOM (document object model, javascript objects)
+        // querySelector always return the first match, return dom node
+        var progress = document.querySelector('progress');
+        setInterval(function () {
+            progress.value += 1;
+        }, 50);
+    </script>
+</body>
+
+</html>

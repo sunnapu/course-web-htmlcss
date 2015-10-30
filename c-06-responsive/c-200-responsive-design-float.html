@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS responsive design</title>
+    <style>
+        body,
+        section {
+            border: solid #59488b 1px;
+        }
+        
+        @media screen and (max-width: 599px) {
+            ul {
+                list-style: none;
+                float: right;
+            }
+            
+            ul > li {
+                display: inline-block;
+            }
+            
+            section {
+                clear: right;
+            }
+            
+        }
+        
+        @media screen and (min-width:599px) {
+            ul {
+                list-style-type: none;
+            }
+            
+            ul>li {
+                padding: 4px;
+            }
+            
+            nav {
+                float: left;
+                width: 20%;
+            }
+            section {
+                width: 80%;
+                margin-left: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, fugiat, laborum delectus non earum est modi ipsam unde vero velit maxime repellendus laudantium explicabo atque perferendis inventore saepe eligendi itaque.
+    </section>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, architecto a sed voluptas quas consequatur in! Ab, quasi, maxime, quibusdam dolorem neque voluptas facere sed blanditiis et dolorum nisi soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nulla reiciendis veritatis dolorum incidunt qui! Dolorum, debitis nam ea accusantium ipsam exercitationem sunt! Libero, provident minus doloremque quis dolorum voluptas.
+    </section>
+</body>
+
+</html>

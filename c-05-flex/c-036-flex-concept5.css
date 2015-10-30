@@ -1,0 +1,25 @@
+.container {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* justify-content along the main axis */
+    /* flex-start, flex-end, center, space-between, space-around */
+    /* should be called halign */
+    
+    align-items: flex-end;
+    /* align-items along the cross axis, but for items in the same line */
+    /* flex-start, flex-end, center, baseline, stretch */
+    /* should be called valign-inline */
+    
+    align-content: space-around;
+    /* align-content along the cross axis, but for lines */
+    /* flex-start, flex-end, center, space-between, space-around, stretch */
+    /* should be called valign-lines */
+}
+
+.i1, .i2, .i3, .i4, .i5, .i6 {
+    flex-basis: 30%;
+}
+/* i4 has no room for the first line, so it wraps to the second line */

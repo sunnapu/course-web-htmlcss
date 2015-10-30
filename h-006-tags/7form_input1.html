@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+
+<body>
+    <h3>form</h3>
+    <h3>input type: text, password, radio, checkbox, file, hidden, date, email, url, submit</h3>
+    <form action="">
+        <h3>Input text</h3>
+        <label for='name'>user name:</label>
+        <input id='name' type="text" name="namedata" maxlength="30" />
+        <label for="password">password</label>
+        <input id='password' type="password" name="passworddata" />
+        <input type="submit" value='submit'>
+    </form>
+    <form action="">
+        <h3>Select choices</h3>
+        <input type="radio" name="agree" value="yes"> yes
+        <input type="radio" name="agree" value="no" checked='checked'> no
+        <input type="radio" name="agree" value="notsure"> not sure
+
+        <br>
+        <input type="checkbox" name='selecttech' value="web front-end"> web front-end
+        <input type="checkbox" name='selecttech' value="web back-end"> web back-end
+        <input type="checkbox" name='selecttech' value="enterprise software"> enterprise software
+        <input type="submit" value='submit'>
+    </form>
+
+    <form action="">
+        <h3>input file</h3>
+        <input type="file" name="excelsheet" />
+        <input type="submit" value='submit'>
+    </form>
+
+    <form action="">
+        <h3>a hidden input</h3>
+        <input type="hidden" name='roundtrip' value='hiddenvalue'>
+        <input type="submit" value='submit'>
+    </form>
+
+    <form action="">
+        <label for='partydate'>input date</label>
+        <input id='partydate' type="date" name='partydate'>
+        <input id='partydate' type="time" name='partytime'>
+        <input id='partydate' type="week" name='partyweek'>
+        <input id='partydate' type="month" name='partymonth'>
+        <input id='partydate' type="datetime-local" name='partydatetime-local'>
+        <input type="submit" value='submit'>
+    </form>
+
+    <br>
+    <label for='email'>input email</label>
+    <input id='email' type="email" name='username' required>
+    <br>
+    <label for="url">input url</label>
+    <input id='url' type="url" name='inputurl'>
+
+
+    <input type="submit" value='submit'>
+    <input type="reset">
+    </form>
+
+</body>
+
+</html>

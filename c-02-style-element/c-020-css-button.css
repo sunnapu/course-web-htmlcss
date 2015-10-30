@@ -1,0 +1,52 @@
+.button {
+    text-decoration: none;
+    /**/
+    
+/*    border: solid blue 5px;*/
+}
+
+a,
+div,
+button {
+    font-size: 50px;
+}
+
+.goodlooking {
+    display: inline-block;
+    height: 1.8em;
+    width: 5em;
+    /*em: Relative to the font-size of the element (2em means 2 times the size of the current font)*/
+    /**/
+    
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    line-height: 1.8em;
+    /**/
+    
+    border-radius: 73px;
+}
+
+
+.gradient {
+    background: linear-gradient(to bottom right, rebeccapurple, #1d0426);
+}
+
+
+.interactivity:active {
+    background: linear-gradient(to bottom right, #1d0426, rebeccapurple);
+}
+
+.interactivity:hover {
+    cursor: pointer;
+}
+
+
+.goodlookingbutton {
+    border: none;
+    height: 1.8em;
+    width: 5em;
+    background-color: #ef027d;
+    color: white;
+    border-radius: 50px;
+}

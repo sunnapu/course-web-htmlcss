@@ -1,0 +1,21 @@
+.CodeMirror {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+    width: 50%;
+    border-right: 1px solid black;
+}
+.CodeMirror-selected {
+    background-color: yellow !important;
+}
+.CodeMirror-selectedtext {
+    color: black;
+}
+iframe {
+    width: 49%;
+    float: left;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0px;
+    border-left: 0px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>URL</title>
+</head>
+
+<body>
+    <h3>http://www.example.com:80/posts?name=john&amp;age=15#section1</h3>
+    <ul>
+        <li>protocol: http</li>
+        <li>host: www.example.com</li>
+        <li>port: 80</li>
+        <li>path: /posts</li>
+        <li>query: ?name=john&amp;age=15</li>
+        <li>fragment url: #section1 (a location within a resource, this will not be sent to server)</li>
+    </ul>
+
+    <h3>URL and URI and URN</h3>
+    <ul>
+        <li>People use them interchangably, but not correct</li>
+        <li>URI: Uniform Resource Identifier, identify a resource by location or a name or both. It can be URL and URN more specifically, but URL is not always URI</li>
+        <li>URL: Uniform Resource Locator, specify where a resource is and how to access it, such as http://domain.com, ftp://, smb:// etc</li>
+        <li>URN: Uniform resource name</li>
+        <li>example of URI:
+            <blockquote>
+                <pre>
+      ftp://ftp.is.co.za/rfc/rfc1808.txt
+      http://www.ietf.org/rfc/rfc2396.txt
+      ldap://[2001:db8::7]/c=GB?objectClass?one
+      mailto:John.Doe@example.com
+      news:comp.infosystems.www.servers.unix
+      telnet://192.0.2.16:80/
+      
+      tel:+1-816-555-1212
+      urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+               </pre>
+
+            </blockquote>
+        </li>
+        <li>resource: <a href="http://www.ietf.org/rfc/rfc3986.txt">RFC3986</a></li>
+    </ul>
+</body>
+
+</html>

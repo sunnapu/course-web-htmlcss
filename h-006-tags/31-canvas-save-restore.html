@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Canvas Test</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="320" height="200"></canvas>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = 'OrangeRed';
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.shadowBlur = 4;
+        ctx.shadowColor = 'rgba(204, 204, 204, 0.5)';
+        ctx.fillRect(0, 0, 15, 150);
+        ctx.save();
+
+        ctx.fillStyle = 'YellowGreen';
+        ctx.shadowOffsetX = 10;
+        ctx.shadowOffsetY = 10;
+        ctx.shadowBlur = 4;
+        ctx.shadowColor = 'rgba(204, 204, 204, 0.5)';
+        ctx.fillRect(30, 0, 30, 150);
+        ctx.save();
+
+        ctx.fillStyle = 'LightSeaGreen';
+        ctx.shadowOffsetX = 15;
+        ctx.shadowOffsetY = 15;
+        ctx.shadowBlur = 4;
+        ctx.shadowColor = 'rgba(204, 204, 204, 0.5)';
+        ctx.fillRect(90, 0, 45, 150);
+        ctx.save();
+
+        ctx.restore();
+        ctx.beginPath();
+        ctx.arc(185, 75, 22, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.restore();
+        ctx.beginPath();
+        ctx.arc(260, 75, 15, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.restore();
+        ctx.beginPath();
+        ctx.arc(305, 75, 8, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fill();
+    </script>
+</body>
+
+</html>

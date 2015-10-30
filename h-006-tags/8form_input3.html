@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>other input</title>
+</head>
+
+<body>
+    <h3>textarea, select</h3>
+    <form action="">
+        <br> message:
+        <textarea name="message" cols="200" rows="6"></textarea>
+
+        <p>Select province</p>
+        <select name="province">
+            <option value="on">ontario</option>
+            <option value="sk">saskatchewan</option>
+            <option value="ab">alberta</option>
+            <option value="qc">quebec</option>
+            <option value="mb">manitoba</option>
+        </select>
+
+        <br>
+        <p>Pick food</p>
+        <select id='food' name="food" size='3' multiple>
+            <option value="pizza">Pizza</option>
+            <option value="coke">Coke</option>
+            <option value="burger">Burger</option>
+            <option value="tuna">Tuna</option>
+            <option value="hotdog">Hotdog</option>
+            <option value="taco">Taco</option>
+        </select>
+        <br>
+        <select name="foodanddrink">
+            <optgroup label="food">
+                <option>Pizza</option>
+                <option>Burger</option>
+            </optgroup>
+            <optgroup label="drink">
+                <option>Pop</option>
+                <option>Juice</option>
+            </optgroup>
+        </select>
+
+        <input type="submit" value='submit'>
+    </form>
+</body>
+
+</html>

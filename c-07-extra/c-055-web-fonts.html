@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS font face</title>
+    <style>
+        @font-face {
+          font-family: 'Permanent Marker';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Permanent Marker'), local('PermanentMarker'),         url(http://themes.googleusercontent.com/static/fonts/permanentmarker/v3/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff) format('woff');
+        /* try to use local font, 2 different name are tried, if don't have that font installed, then, download font */
+}
+
+/* or download font, use in project, url(/font/PermanentMarker-cursive.woff) */
+        
+        p {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 35px;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p>Very quiet at Masonville public library</p>
+    
+    <h2>Ways to include fonts</h2>
+    <ul>
+        <li>
+        &lt;link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+        </li>
+        <li>
+            @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+        </li>
+        <li>
+            By Javascript <a href="https://www.google.com/fonts#QuickUsePlace:quickUse">Google fonts</a>
+        </li>
+        <li>Use @font-face, first define a name for the font (e.g. 'Permanent Marker'), and then point to the font file.</li>
+    </ul>
+    
+    <h2>Resources to find web fonts</h2>
+    <ul>
+        <li>External font services
+            <ul>
+                <li>typekit.com</li>
+                <li>google fonts</li>
+            </ul>
+        </li>
+        <li>Download fonts and install directly in website directory
+            <ul>
+                <li>fonts.com</li>
+                <li>myfonts.com</li>
+                <li>fontsquirrel.com</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

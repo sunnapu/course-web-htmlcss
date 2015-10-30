@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>embed</title>
+</head>
+
+<body>
+    <ul>
+        <li>embed audio, video, Java applets, ActiveX, PDF, Flash, html into html page</li>
+        <li>embed is not supported by IE, object tag is supported better, except pdf not work in Chrome</li>
+        <li>autoplay false for embed and object don't work for chrome, that's bugs</li>
+    </ul>
+    <object data="../../video/puppy.mp4" type="video/mp4" width="300" height="200">
+        <param name="autostart" value="0">
+    </object>
+
+    <!-- Mozilla create embed and img -->
+    <embed autostart="false" type="video/mp4" src="../../video/puppy.mp4" width="300" height="200" autoplay="false">    
+
+    <object data="arrow2_blue_black.swf" type="application/x-shockwave-flash" width="150" height="35">
+        <param name="foo" value="bar">
+    </object>
+
+    <iframe src="201202_Preparing_Canadas_Youth_for_the_Jobs_of_Tomorrow.pdf" width="300" height="200">
+    </iframe>
+</body>
+
+</html>

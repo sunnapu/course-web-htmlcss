@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS grid</title>
+    <style>
+        div {
+            border: solid #59466b 1px;
+        }
+        
+        div.float {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin: 0px 10px 10px 10px;
+        }
+        
+        div.clear {
+            clear: left;
+            background: orange;
+            height: 40px;
+        }
+        
+        div.inlineblock {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            /*            margin: 0px 10px 10px 10px;*/
+        }
+        
+        div.withoutclear {
+            background: orange;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Use 'float': need 'clear' for the following elements</h1>
+    <div class="float">
+        <h1>1</h1>
+    </div>
+    <div class="float">
+        <h1>2</h1>
+    </div>
+    <div class="float">
+        <h1>3</h1>
+    </div>
+    <div class="float">
+        <h1>4</h1>
+    </div>
+    <div class="float">
+        <h1>5</h1>
+    </div>
+    <div class="float">
+        <h1>6</h1>
+    </div>
+    <div class="float">
+        <h1>7</h1>
+    </div>
+    <div class="float">
+        <h1>8</h1>
+    </div>
+    <div class="clear">clear:left</div>
+
+    <h1>Use 'inline block': no need 'clear'; but:</h1>
+    <ul>
+        <li>still need set width</li>
+        <li>still need hack space between inline-blocks</li>
+    </ul>
+    <div class="inlineblock">
+        <h1>1</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>2</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>3</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>4</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>5</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>6</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>7</h1>
+    </div>
+    <div class="inlineblock">
+        <h1>8</h1>
+    </div>
+    <div class="withoutclear">without clear</div>
+    reference: https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+</body>
+
+</html>

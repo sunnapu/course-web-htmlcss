@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>width</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .navbar {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+        
+        h1.logo {
+            display: inline-block;
+            font-size: 1em;
+        }
+        
+        ul.nav {
+            list-style: none;
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+        }
+        
+        li {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 0.7em;
+        }
+        
+        @media all and (max-width:672px) {
+            ul.nav {
+                position: static;
+                display: block;
+            }
+            
+            li {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <h1 class="logo">TEENS PROGRAMMING</h1>
+        <ul class="nav">
+            <li>TECHNOLOGIES</li>
+            <li>COURSES</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="c-035-vertical-center.css">
+    <title>CSS center</title>
+
+    <style>
+        .container {
+            border: solid blue 3px;
+            height: 100px;
+        }
+        
+        .container:before {
+            content: 'ghost';
+            border-right: solid red 3px;
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        
+        .item {
+            display: inline-block;
+            border: solid orange 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vertical center</h1>
+    <h2>types: block in block, inline in block</h2>
+
+    <h3>8. Ghost element</h3>
+    <p>div in div, apply style to itself and 'ghost'</p>
+    <div class="container">
+        <div class="item">Content here</div>
+    </div>
+
+</body>
+
+</html>

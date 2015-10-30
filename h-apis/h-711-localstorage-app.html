@@ -1,0 +1,55 @@
+```
+title: Local storage application
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>local storage application</title>
+    
+    <style>
+        label, input[type=submit] {
+            display:block;
+        }
+        textarea {
+            width: 300px; height: 100px;
+        }
+    </style>
+</head>
+<body>    
+    <label for="textarea">Your Comment?</label>
+    <textarea name="textarea" id="textarea"></textarea>
+    <input type="submit">
+    
+    <script>
+        var textarea=document.getElementById('textarea');
+        var updateInterval;
+        
+        // restore comment from local storage
+        if (localStorage.comment) {
+            textarea.value = localStorage.comment;
+        } 
+        
+        // save to local storage
+        textarea.addEventListener('focus', function() {
+            updateInterval = setInterval(function() {
+                //open chrome devtools - resources - local storage to see it in action
+                localStorage.comment = textarea.value;
+            }, 500);
+        });
+        
+        // stop save to local storage
+        textarea.addEventListener('blur', function() {
+            if (this.value) localStorage.comment=this.value;
+            
+            clearInterval(updateInterval);
+        }, false);
+        
+        //Note: the storage event only fire in different window or tab, and the page must served from a server not from file:///
+        //Start two tabs with same url to test
+        window.addEventListener('storage', function() {
+            console.log("updated");
+        }, true);
+
+    </script>
+</body>
+</html>

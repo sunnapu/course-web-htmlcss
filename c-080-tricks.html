@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS tricks</title>
+    <style>
+        .container {
+            background: rgba(0,255,77,0.5);
+            
+            width: 600px;
+            height: 500px;
+        }
+        
+        .div-widthauto {
+            background: lightblue;
+            
+            width: auto;
+            
+            border: solid;
+            border-color: orange;
+            border-width: 0 50px;
+
+            padding: 0px 50px;
+            background: 
+            -webkit-linear-gradient(left, blue 50px, lightblue 50px, lightblue 350px, blue 350px);
+            margin: 0 50px 0 50px;
+        }
+        
+        .div-with100percent {
+            background: lightblue;
+            
+            width: 100%;
+            
+            border: solid;
+            border-color: orange;
+            border-width: 0 50px;
+
+            padding: 0 50px;
+            background: -webkit-linear-gradient(left, blue 50px, lightblue 50px, lightblue 650px, blue 650px);
+            margin: 0 50px;
+        }
+        
+        .border-box {
+            box-sizing: border-box;
+            background: -webkit-linear-gradient(left, blue 50px, lightblue 50px, lightblue 450px, blue 450px);
+        }
+    </style>
+</head>
+<body>
+    <h1>width: auto vs width: 100%</h1>
+    <p>reference from http://www.456bereastreet.com/lab/width-auto/</p>
+    <div class="container">
+        <p>I am a container with width 600px. </p>
+        <div class="div-widthauto">
+            width: auto <br>
+            content width = parent width - horizontal margin width - horizontal border width - horizontal padding width<br>
+            my containing width = parent width
+        </div>
+        
+        <br>
+        <div class="div-with100percent border-box">
+            width: 100%; <br>
+            content width = parent width - horizontal border width - horizontal padding width
+            my containing width = horizontal margin width + parent width 
+        </div>
+        
+        <br>
+        <div class="div-with100percent">
+            width: 100%; <br>
+            content width = parent width
+            my containing width = horizontal margin width + horizontal border width + horizontal padding width + content width                    
+        </div>
+    </div>
+</body>
+</html>

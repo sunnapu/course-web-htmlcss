@@ -1,0 +1,47 @@
+.container {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: space-around;
+}
+
+.i1 {
+    flex-basis: auto;
+    width: 25%;
+    order: 2;
+    align-self: center;
+    /* same as align-items, but for individual item */
+}
+
+.i2 {
+    flex-basis: auto;
+    width: 25%;
+    order: 1;
+}
+
+.i3 {
+    flex-basis: auto;
+    width: 25%;
+    order: 3;
+}
+
+.i4 {
+    flex-basis: auto;
+    width: 30%;
+    order: 4;
+}
+
+.i5 {
+    flex-basis: auto;
+    width: 30%;
+    order: 5;
+}
+
+.i6 {
+    flex-basis: auto;
+    width: 30%;
+    order: 6;
+}

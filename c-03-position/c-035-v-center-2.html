@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS center</title>
+    <style>
+        .container {
+            position: relative;
+            background: #59488b;
+            width: 200px;
+            height: 100px;
+        }
+        
+        .absolute-negative-margin {
+            height: 40px;
+            width: 100px;
+            border: solid tomato 2px;
+            color: white;
+        }
+        
+        /* code to focus on */
+        .absolute-negative-margin {
+            position: absolute;
+            top: 30px; /* 100/2-20 */
+            left: 50px; /* 200/2-50 */
+            
+            /* or without math calculation */
+/*
+            top: 50%;
+            left: 50%;
+            margin: -20px 0 0 -50px;
+*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vertical center</h1>
+    <h3>2: Negative margin</h3> div in div, apply style for itself
+    <div class="container">
+        <div class="absolute-negative-margin">
+            center
+        </div>
+    </div>
+</body>
+
+</html>

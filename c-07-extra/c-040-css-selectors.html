@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <style>
+        abc {
+            display: block;
+            color: red;
+        }
+        
+        p bcd {
+            color: pink;
+        }
+        
+        p>bcd {
+            color: Orange;
+        }
+        
+        p.yellow {
+            color: Yellow;
+            background-color: black;
+        }
+        
+        p#purple {
+            color: purple;
+        }
+        
+        h5:hover {
+            color: green;
+        }
+        /* excercise */
+        
+        div table {
+            border: solid 2px lightblue;
+        }
+        
+        div table tr {
+            background-color: skyblue;
+        }
+        
+        div table>tr {
+            background-color: white;
+        }
+        
+        div .largeequal600 {
+            color: navy;
+        }
+        
+        div #ilike {
+            color: brown;
+        }
+        
+        div td:last-child {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectors</h1>
+    <abc>Tag selector: set 'red' color to this text.</abc>
+
+    <p>
+        <abc>
+            <bcd>Multiple selector: set 'pink' color to this text.
+            </bcd>
+        </abc>
+    </p>
+
+    <p>
+        <bcd>Direct child selector: set 'Orange' color to this text.
+        </bcd>
+    </p>
+
+    <p class='yellow'>Class selector: set 'yellow' color and 'black' background color to this text.</p>
+
+    <p id='purple'>Id selector: set 'purple' color to this text.</p>
+
+    <h5>Pseudo-class selectors: the elements are not part of the html document such as :hover, :first-child etc</h5>
+
+    <h1>Excercise: </h1>
+    <ul>
+        <li>use 'tag selector', set table border with style 'solid 2px lightblue'</li>
+        <li>use 'multiple selector', set rows background-color 'skyblue'
+        </li>
+        <li>
+            use 'direct child selector', set rows (except the table head row) background-color 'white'
+        </li>
+        <li>
+            use 'class selector', set cell with number >= 600 font color 'navy'
+        </li>
+        <li>
+            use 'id selector', set a number you like with color 'brown'
+        </li>
+        <li>
+            use 'pesudo-class selector', set the 3rd column with background-color 'pink'
+        </li>
+    </ul>
+    <h4>Table without style</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>1st column</th>
+                <th>2nd column</th>
+                <th>3rd column</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>700</td>
+            <td>800</td>
+            <td>900</td>
+        </tr>
+    </table>
+
+    <h4>Table with style</h4>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>1st column</th>
+                    <th>2nd column</th>
+                    <th>3rd column</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td id='ilike'>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td class='largeequal600'>600</td>
+            </tr>
+            <tr>
+                <td class='largeequal600'>700</td>
+                <td class='largeequal600'>800</td>
+                <td class='largeequal600'>900</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>Selector specificity</h1>
+    <p>inline style > ID > Class > long tag path > short tag path, if specificity is same, the last rule override the privous rules. </p>
+<!--    This topic can be more interesting, <a href="http://css-tricks.com/specifics-on-css-specificity/">read more.</a>-->
+    <p>if having a structure: div#someid>img+div>img#imgid</p>
+    <div id="someid">
+        <img src="" alt="">
+        <div><img src="" alt="" id="imgid"></div>
+    </div>
+    <p>#someid img > #imgid, because both selector start with id, then compare which is longer</p>
+    <p>#someid div img > #someid img </p>
+</body>
+
+</html>

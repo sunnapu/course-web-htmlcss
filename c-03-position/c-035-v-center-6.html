@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS center</title>
+    <style>
+        .container-with-text {
+            border: solid #59488b 2px;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+        .container-with-text>p {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1.2em;
+        }
+        
+        .container-with-img {
+            border: solid #59488b 2px;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+        .container-with-img img {
+            vertical-align: middle;
+        }
+        
+        .container-for-div {
+            border: solid #59488b 2px;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+        .container-for-div div {
+            width: 40px;
+            height: 40px;
+            background-color: aqua;
+            /* div must be an inline element */
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .container-with-text1 {
+            width: 300px;
+            height: 200px;
+            border: solid tomato;
+            line-height: 200px;
+        }
+        
+        .container-with-text1 p {
+            margin-top: 0px;
+        }
+        
+        .spantext {
+            font-size: 100px;
+            vertical-align: middle;
+            border: solid blue 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vertical center</h1>
+    <h3>6: line-height, vertical-align: middle</h3>
+    <p>text in div</p>
+    <div class="container-with-text">
+        Content content content outof container
+    </div>
+    <br>
+    <br>
+    <p>p in div</p>
+    <div class="container-with-text">
+        <p>Content content content outof container</p>
+    </div>
+
+    <br>
+    <br>
+    <p>img in div</p>
+    <div class="container-with-img">
+        <img src="../images/dot.png" alt="">
+    </div>
+    <br>
+
+    <p>div in div</p>
+    <div class="container-for-div">
+        <div></div>
+    </div>
+    <br>
+
+    <p>text</p>
+    <div class="container-with-text1">
+        <p>Make text vertical center <span class="spantext">I</span>
+        </p>
+    </div>
+
+</body>
+
+</html>

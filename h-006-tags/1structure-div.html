@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>div</title>
+    <style>
+        * {
+            padding: 10px;
+            text-align: center;
+            margin: 10px 0 10px 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        body {
+            /*            background-color: gray;*/
+            
+            border: solid;
+        }
+        
+        div {
+            background-color: dimgrey;
+            color: white;
+        }
+        
+        #header {}
+        
+        #section {
+            background-color: black;
+        }
+        
+        #section h2,
+        #section p {
+            text-align: left;
+        }
+        
+        #article {
+            float: left;
+            width: 69%;
+            height: 260px;
+        }
+        
+        #sidebar {
+            float: right;
+            width: 30%;
+            height: 260px;
+        }
+        
+        #footer {
+            clear: both;
+        }
+        
+        #nav {
+            text-align: right;
+        }
+        
+        h2,
+        p {
+            background-color: grey;
+        }
+        
+        ul li {
+            margin: 0px 0px 0px 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">header</div>
+    
+    <div id='nav'>navigation bar
+        <a href="#">Java</a> |
+        <a href="#">Javascript</a> |
+        <a href="#">HTML</a> |
+        <a href="#">CSS</a>
+    </div>
+    
+    <div id='article'>article
+        <div id='section'>section 1
+            <h2>heading</h2>
+            <p>paragraph</p>
+        </div>
+        <div id='section'>section 2</div>
+    </div>
+    
+    <div id='sidebar'>sidebar
+        <h2>Archives</h2>
+        <ul>
+            <li><a href="#">link</a>
+            </li>
+            <li><a href="#">link</a>
+            </li>
+            <li><a href="#">link</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id='footer'>footer</div>
+
+</body>
+
+</html>

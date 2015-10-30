@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <style>
+        td {
+            border: solid blue 1px;
+            width: 600px;
+            height: 100px;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            border: solid black 2px;
+        }
+        
+        div.static {
+            /*                position: static;*/
+        }
+        
+        div.relative {
+            position: relative;
+            top: 20px;
+            left: 50px;
+/*            width: auto;*/
+        }
+        
+        div.container {
+            /* position must not be static for show 'absolute' position */
+            
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 600px;
+            height: 150px;
+        }
+        
+        div.absolute {
+            position: absolute;
+            top: 20px;
+            left: 117px;
+            background: rgba(0, 255, 0, 0.3);
+            width: 290px;
+        }
+        
+        div.underabsolute {
+            background: rgba(0, 255, 255, 0.3)
+        }
+        
+        /* relative to the viewport not the web page  */
+        div.fixed {
+            position: fixed;
+            background-color: lightblue;
+            bottom: 200px;
+            right: 20px;
+        }
+        
+        div.inherit {
+            width: 300px;
+            height: 50px;
+            top: 10px;
+            left: 40px;
+            position: inherit;
+            /* without this, it is 'static' instead of its  parent 'position' value 'relative', because 'position' doesn't cascade. Otherwise, top and left will not work */
+        }
+        
+        div.z-index1 {
+            /* z-index cannot be applied for element with position static */
+            z-index: 10;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 255, 0, 1);
+        }
+        
+        div.z-index2 {
+            z-index: 2;
+            position: absolute;
+            top: 39px;
+            left: 48px;
+            background-color: rgb(0, 147, 255);
+        }
+        
+        div.float {
+            float: right;
+            height: 150px;
+        }
+        
+        div.clear {
+            width: 500px;
+            clear: right;
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class='static'>static</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='relative'>relative: with width:auto will stretch to whole container width</div>
+                <div>Test if the above 'relative' div occupies its original position - Yes</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='container'>
+                    container
+                    <div class='absolute'>absolute: 1. move away from the flow of page; free the original space;
+                        <br>2. only stretch as wide as its content, until its max. 
+                        <br>3. absolute element position is relative to its parent not its original position</div>
+                    <div class='underabsolute'>test if 'absolute' occupies its original position</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='fixed'>fixed</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='relative'>relative:
+                    <div class='inherit'>inherit: 'position' doesnot cascade, so child need 'inherit' value to simulate cascade
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='container'>
+                    <div class='z-index1'>1</div>
+                    <div class='z-index2'>2</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class='float'>float 1 </div>
+                <div class='float'>float 2</div>
+                <h4>Floating elements like boats on the sea. We tell browser where to float, the browser makes final decision where to put it without overlapping with other floating elements. Float is used when we want to surround text with image, but people also use it for page structure layout before 'flex' coming into CSS.</h4>
+                <div class='clear'>clear: when floating elements and non-floating elements sometimes be top of each other.'clear' is for control surrounding. This is why when use float to draw a layout, we most of time have to use 'clear' together.</div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

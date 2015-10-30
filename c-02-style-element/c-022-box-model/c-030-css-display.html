@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" href="c-030-css-display.css">
+</head>
+
+<body>
+    <h2>Display property</h2>
+    <p>Values: block, inline-block, inline, none</p>
+
+    <h3>1. "block" by default, it takes up the full width of the parent element, but no height. examples: p, form, div, header, footer, section etc</h3>
+    <div class='block1'></div>
+    <br>
+    <div class='block1'>'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content, 'block' with content,</div>
+    <br>
+    <div class='block2'>'block' with height and width</div>
+
+    <h2>2. "inline-block" takes up no space by default, no width, no height. examples: a, span etc</h2>
+    <div class="inline-block1"></div>
+    <br>
+    <div class="inline-block1">inline-block with content</div>
+
+    <h2></h2>
+    <div class="inline-block">"inline-block" with height and width. Note: it has no width by default.</div>
+    <span>I am following the inline-block ahead of me.</span>
+
+    <h2>3. "inline" cannot set width and height. Its width depends on its content.</h2>
+    <div id="inline1">inline2 very very very very very very very very very very very very very very long content warp to next line and continue ... ... ... ... ...</div>
+    <h2>4. "none" disappear the element completely from the page. It is still in DOM tree, but not renderred by browser.</h2>
+    <div id="none">none content</div>
+    <p>but we can find it by Javascript in DOM tree:</p>
+    <pre>
+        <code class="js html">
+              document.getElementById("none")
+          ==> &lt;div id="none"&gt;none content&lt;/div&gt;
+        </code>
+    </pre>
+
+    <hr>
+    <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/">Trick: remove space between inline-block</a>
+
+    <!-- Highlight.js -->
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js">
+    </script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</body>
+
+</html>

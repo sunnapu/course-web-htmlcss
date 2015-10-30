@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        div.example {
+            width: 400px;
+            height: 124px;
+            border: solid blue 2px;
+            margin: 100px;
+        }
+        
+        .visible {
+            overflow: visible;
+            /* background image large than div, can't be visible even setting overflow to 'visible' */
+        }
+        
+        .hidden {
+            overflow: hidden;
+        }
+        
+        .scroll {
+            overflow: scroll;
+        }
+        /* make scrollbar alwaye visible */
+        
+        div.auto {
+            /* without div selector will not override the div.example */
+            
+            overflow: auto;
+        }
+        /* make scrollbar visible when necessary*/
+        
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+        /* Style for note section */
+        
+        div.wrap {
+            background: orange;
+        }
+        
+        div.wrap.fix {
+            overflow: hidden;
+            /* or 'auto' */
+        }
+        
+        div.floatleft {
+            float: left;
+            background: lightgreen;
+            width: 75%;
+        }
+        
+        div.floatright {
+            float: left;
+            background: lightblue;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Visible</h3>
+    <div class='visible example'>
+        <img src="../images/draft/500-100.png">
+    </div>
+
+    <h3>Hidden</h3>
+    <div class='hidden example'>
+        <img src="../images/draft/500-100.png">
+    </div>
+
+    <h3>Scroll</h3>
+    <div class='scroll example'>
+        <img src="../images/draft/500-100.png">
+    </div>
+
+    <h3>Auto</h3>
+    <div class='auto example'>
+        <img src="../images/draft/500-100.png">
+    </div>
+
+    <section>
+        <h3>Problem: The wrapper div doesn't include its children</h3>
+        <div class="wrap">
+            <p>Wrapper</p>
+            <div class="floatleft">
+                float left
+            </div>
+            <div class="floatright">
+                float right
+            </div>
+        </div>
+
+        <br>
+
+        <h3>Fix: element with overflow applied auto or hidden will extend as large as it needs to include child elements that are floated; Can use Brackets feature - show element with border when cursor in a tag or use rect = element.getBoundingClientRect(); rect.bottom; rect.left; to check. </h3>
+        <div class="wrap fix">
+            <p>Wrapper</p>
+            <div class="floatleft">
+                float left
+            </div>
+            <div class="floatright">
+                float right
+            </div>
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* if child height 100%, its height equals to its parent */
+        /* this is not the case if the parent is body or html, since body and html has no initial height */
+        /* the trick is we have to set html/body to 100% too to make it work */
+        html,
+        body {
+            height: 100%;
+            
+        }
+        
+        #child {
+            background: #2ab950;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='child'>
+
+    </div>
+</body>
+
+</html>

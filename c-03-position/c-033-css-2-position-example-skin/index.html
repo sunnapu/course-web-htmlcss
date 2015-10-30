@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="light.css" />
+    <!--    <link rel="stylesheet" href="dark.css">-->
+</head>
+
+<body>
+    <div id="header">Header
+        <ul>
+            <li><a href="#" onclick="changeCSS('light.css');">Light</a>
+            </li>
+            <li><a href="#" onclick="changeCSS('dark.css');">Dark</a>
+            </li>
+        </ul>
+    </div>
+    <div id="nav">
+        Navigation
+    </div>
+
+    <div id="content">
+        <p>Content</p>
+
+    </div>
+    <div id="footer">Footer</div>
+
+
+    <script>
+        function changeCSS(cssFile) {
+
+            var oldlink = document.getElementsByTagName("link").item(0);
+
+            var newlink = document.createElement("link");
+            newlink.setAttribute("rel", "stylesheet");
+            newlink.setAttribute("href", cssFile);
+
+            document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+        }
+    </script>
+</body>
+
+</html>

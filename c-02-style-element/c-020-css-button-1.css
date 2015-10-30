@@ -1,0 +1,11 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 90px;
+}

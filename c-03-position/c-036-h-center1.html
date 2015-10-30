@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS center</title>
+    <!--    <link rel="stylesheet" href="c-036-h-center.css">-->
+    <style>
+        .container-horizontal-center-img1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .ul-container {
+            text-align: center;
+            border: solid green 4px;
+        }
+        
+        .ul-centered {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Horizontal center</h1>
+
+    <h3>4.horizontal center image: apply style to its parent by flex justify-content: center</h3>
+    <section class="container-horizontal-center-img1">
+        <img src="../images/dot.png" alt="">
+    </section>
+
+    <h3>5: centered list items: apply style to itself and its parent</h3>
+    <div class="ul-container">
+        <ul class="ul-centered">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

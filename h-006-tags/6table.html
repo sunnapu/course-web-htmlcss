@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+</head>
+
+<body>
+    <h3>table, tr, th, td</h3>
+    <hr>
+    <h3>simple table</h3>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <th>friend 1</th>
+            <td>Jason</td>
+            <td>519-111-1111</td>
+        </tr>
+        <tr>
+            <th>friend 2</th>
+            <td>John</td>
+            <td>226-111-1111</td>
+        </tr>
+    </table>
+
+    <h3>Large Table</h3>
+    <table>
+        <caption>Table caption</caption>
+        <colgroup>
+            <col span="2" style="background-color:#88D100">
+                <col style="background-color:yellow">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+                <th>Header content 3</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">Footer content 1 </td>
+                <td>Footer content 2</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Body content 1</td>
+                <td rowspan="2">Body content 2</td>
+                <td>Body content 3</td>
+            </tr>
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

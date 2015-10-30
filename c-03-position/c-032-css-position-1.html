@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+                
+        .container {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            height: 150px;
+            background-color: aqua;
+            width: 700px;
+            margin: 0 auto;
+            
+            position: relative;
+        }
+        
+        .item {
+            height: 100px;
+            background-color: tomato;
+            position: relative;
+            right: 100px;
+            width: 200px;
+        }
+
+        
+        .item1 {
+            height: 100px;
+            background-color: tomato;
+            width: 200px;
+            
+            position: absolute;
+            right:100px;
+        }
+        
+        .item2 {
+            height: 100px;
+            background-color: tomato;
+            width: 200px;
+            
+            position: fixed;
+            right:100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">relative</div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="item1">absolute</div>
+    </div>
+    <br>
+        <div class="container">
+        <div class="item2">fixed</div>
+    </div>
+</body>
+</html>

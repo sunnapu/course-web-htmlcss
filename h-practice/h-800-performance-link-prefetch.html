@@ -1,0 +1,27 @@
+```
+title: HTML5 performance link prefetch
+isExample: true
+```
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link prefetch</title>
+</head>
+<body>
+        <!-- prefetch a page -->
+    <link rel="prefetch" href="http://teensprogramming.com/pages/posts">
+    
+    <!-- prefetch an image -->
+<!--    <link rel="prefetch" href="http://teensprogramming.com/images/code.png">-->
+    
+    <h4 style="color: red">I got cancellation message: provisional headers are shown in chrome devtool network tab. And I can't see prerender in chrome task manager. The test page below shows chrome prefetch is enabled. I will figure out why it is cancelled in my case later. </h4>
+    <h4>prefetch web page and image example, check chrome devtools network activity to see if how the web page and image will be downloaded ahead of time before user may use it.</h4>
+    <h4>Note: Browser can abort the prefetch for some reasons, for example, when developer tools is open. So for developers, it is difficult to tell if prefetch happened. </h4>
+    <ul>
+        <li>Use chrome task manager to see.</li>
+        <li>Use <a href="http://prerender-test.appspot.com/">a test page</a></li>
+    </ul>
+</body>
+</html>

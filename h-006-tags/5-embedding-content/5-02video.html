@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../components/codemirror/codemirror.css">
+    <link rel="stylesheet" href="../components/codemirror-user/codemirror-user.css">
+    <style>
+        div.taglist {
+            background-color: black;
+            color: wheat;
+            font-size: 30px;
+            clear: both;
+            overflow: auto;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="taglist">
+        video[src, poster, controls, loop], audio[src, controls]
+    </div>
+    <textarea id="tag-forvideoaudio">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <body>
+            <h3>3 main video formats supported by HTML5</h3>
+            <p>WebM, MP4 (H.264), ogg/ogv</p>
+
+            <ul>
+                <li>Mozilla Firefox – WebM, Ogg</li>
+                <li>Google Chrome – WebM, Ogg</li>
+                <li>Opera – WebM, Ogg</li>
+                <li>Safari – MP4</li>
+                <li>Internet Explorer 9 – MP4</li>
+                <li>Internet Explorer 6-8 – No HTML5, Flash Only!</li>
+            </ul>
+
+            <h3>video tag</h3>
+            <video width="700" src="../../video/tree-falling-leaves.mp4" poster="../../images/tree-falling-leaves-900.jpg" controls loop>
+                <p>tree falling leaves</p>
+            </video>
+        </body>
+
+        </html>
+    </textarea>
+    <iframe id='preview-tag-forvideoaudio'></iframe>
+
+    <!-- Best practice to add video -->
+    <div class="taglist">
+        best practice to add video for now
+    </div>
+    <textarea id="bestpractice-add-video">
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/
+    swfobject/2.2/swfobject.js"></script>
+            <script type="text/javascript">
+                var flashvars = {};
+                var params = {
+                    movie: "../../video/puppy.flv"
+                };
+                swfobject.embedSWF("../flash/osplayer.swf", "snow",
+                    "400", "320", "8.0.0", flashvars, params);
+            </script>
+        </head>
+
+        <body>
+            <video poster="../images/puppy.jpg" width="400" height="320" controls="controls">
+                <source src="../../video/puppy.mp4" type='video/mp4;
+    codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="../../video/puppy.webm" type='video/webm;
+    codecs="vp8, vorbis"' />
+                <div id="snow">
+                    <p>You cannot see this video of a puppy playing in the snow because this browser does not support our video formats.</p>
+                </div>
+            </video>
+        </body>
+
+        </html>
+    </textarea>
+    <iframe id='preview-bestpractice-add-video'></iframe>
+
+    <div class="taglist">
+        review all tags from html5 cheat sheet ......
+    </div>
+    <!-- codemirror lib -->
+    <script src="../components/codemirror/lib/codemirror.js"></script>
+    <script src="../components/codemirror/mode/htmlmixed.js"></script>
+    <script src="../components/codemirror/mode/javascript.js"></script>
+    <script src="../components/codemirror/mode/css.js"></script>
+    <script src="../components/codemirror/mode/xml.js"></script>
+    <script src="../components/codemirror/selection/active-line.js"></script>
+    <script src="../components/codemirror/selection/mark-selection.js"></script>
+
+    <!-- codemirror user -->
+    <script src="../components/codemirror-user/codemirror-user.js"></script>
+
+    <!-- js -->
+    <script>
+        editorPreviewSideBySide("tag-forvideoaudio", "50%", 800, "preview-tag-forvideoaudio");
+
+        editorPreviewSideBySide("bestpractice-add-video", "50%", 500, "preview-bestpractice-add-video");
+    </script>
+</body>
+
+</html>

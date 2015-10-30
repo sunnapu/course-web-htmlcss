@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS center</title>
+    <style>
+        .container {
+            position: relative;
+            background: #59488b;
+            width: 200px;
+            height: 100px;
+        }
+        
+        .element-center-by-translateY {
+            position: absolute;
+            color: white;
+            border: solid tomato;
+        }
+        
+        /* code to focus on */
+        .element-center-by-translateY {
+            top: 50%;
+            -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+            border: solid tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vertical center</h1>
+    <h3>4: translateY </h3>
+    <p>div in div, apply style for itself</p>
+    <div class="container">
+        <div class="element-center-by-translateY">
+            Center
+        </div>
+    </div>
+</body>
+
+</html>

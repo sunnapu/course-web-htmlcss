@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin</title>
+    <style>
+        .container1,
+        .container2 {
+            width: 500px;
+            height: 200px;
+            background-color: lightblue;
+        }
+        
+        .item1,
+        .item2,
+        .item11,
+        .item22,
+        .item23 {
+            width: 100px;
+            height: 50px;
+            border: solid;
+            background-color: tomato;
+        }
+        
+        .container1 {
+            margin-left: 40px;
+        }
+        
+        .container2 {
+            margin-left: 40px;
+        }
+        
+        p {
+            border: solid tomato;
+        }
+        
+        /* code to focus on */
+        
+        .item1 {
+            /* margin-top is relative to the above element, not the container */
+            /* margin-left is relative to the container */
+            margin-top: 31px;
+            margin-left: 40px;
+            margin-bottom: 100px;
+            margin-right: 40px;
+        }
+        
+        .item2 {
+            /* inline-block has margin-top and margin-left, relative to the container*/
+            /* right and bottom has effects to the items in the same container, not elements outside of the container */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-bottom: 80px;
+            margin-right: 40px;
+        }
+        
+        .item22 {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Container items (block) margin</p>
+    <div class="container1">
+        <div class="item1">item 1</div>
+        <div class="item11">item 11</div>
+    </div>
+    <p>Container items (inline-block) margin</p>
+    <div class="container2">
+        <div class="item2">item 2</div>
+        <div class="item22">item 22</div>
+        <div class="item23">item 23</div>
+    </div>
+    <p>Footer</p>
+</body>
+
+</html>

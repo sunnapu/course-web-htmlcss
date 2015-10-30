@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Background</title>
+    <style>
+        body {
+            padding-bottom: 700px;
+        }
+        
+        h2 {
+            margin-top: 50px;
+        }
+        
+        div {
+            height: 200px;
+            width: 50%;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            border: solid blue 2px;
+        }
+        
+        .scroll {
+            background-image: url("../images/falls.jpg");
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+        
+        .fixed {
+            background: url("../images/falls.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        .local {
+            background: url("../images/falls.jpg");
+            background-attachment: local;
+            background-repeat: no-repeat;
+        }
+        
+        .expand {
+            height: 400px;
+            /*             large than the container div, so scrollbar will appear */
+            
+            width: 100%;
+/*            border: solid red 2px;*/
+            border: initial;
+            
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Why use background-attachment?</h3>
+    <p>use background-attachment to control local view scroll behaviors</p>
+    <p>the local view is a div in the web page (main view)</p>
+    <p>In this example, background image is set as the local view (in a div), the local view is in the main view (page).</p>
+
+    <h2><code>scroll (default): background scrolls when the main view scrolls, but doesn't scroll when the local view scrolls.</code></h2>
+    <div class="scroll">
+        <div class="expand"></div>
+    </div>
+
+    <h2><code>local: background scrolls when either the main or local view scrolls</code></h2>
+    <div class="local">
+        <div class="expand"></div>
+    </div>
+
+    <h2><code>fixed: background doesn't scroll no matter what (unless you move monitor)</code></h2>
+    <div class="fixed">
+        <div class="expand"></div>
+    </div>
+
+    <ul>The following steps make main view and local view scroll:
+        <ul>
+            <li>main view (page) height larger than viewport, so it can scroll up and down, in this case, by body padding-bottom</li>
+            <li>the 'expand' height larger than its container div, so it can scroll up and down</li>
+            <li>the 'expand' has margin to its container div, so it can scroll left and right</li>
+        </ul>
+    </ul>
+</body>
+
+</html>

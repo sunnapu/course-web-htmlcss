@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>web icons</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<!--    load from CDN -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <style>
+        .schoolemail:before {
+            font-family: FontAwesome;
+            content:"\f0e0";
+        }
+        
+        .schoolemail2:before {
+            font-family: FontAwesome;
+            content: attr(data-email);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Concepts:</h2>
+    <ul>
+        <li>Web icons technically have no differences with fonts, they are all shapes.</li>
+        <li>Web icons are scalable, not like gif or png, they lost details when you make them bigger.</li>
+        <li>Web icons support transparency too.</li>
+        <li>Web icons only can have single color or gradient, if need more color we use images.</li>
+    </ul>
+
+    <h2>Font formats</h2>
+    <ul>
+        <li>ttf: true type format</li>
+        <li>otf: open type format</li>
+        <li>ttf and otf can be used for desktop fonts</li>
+        <li>svg: scalable vector graphics</li>
+        <li>eot: embedded open type used only for ie</li>
+        <li>woff: web open font format used for all main browsers</li>
+    </ul>
+    <h1 style="color: blue">How to use font awesome?</h1>
+    <p>Only need include its css file (shown in this page's head)</p>
+    <p>Icon categories: <a href="https://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+    <p>Icon cheatsheet: <a href="https://fortawesome.github.io/Font-Awesome/cheatsheet/">here</a></p>
+    <p>Examples: <a href="https://fortawesome.github.io/Font-Awesome/examples/">here</a></p>
+    <p>Example 1: <i class="fa fa-envelope"></i> teensprogramming@gmail.com</p>
+    <p>Example 2: <i class="fa">&#xf0e0;</i> teensprogramming@gmail.com</p>
+    <p>Example 3: by using html data atribute. <span class="schoolemail2" data-email='&#xf0e0;'> teensprogramming@gmail.com</span></p>
+    <p>How it works:</p>
+    <ul>
+        <li>Font awesome defines its own font 'FontAwesome'</li>
+        <li>Font awssome css import the font</li>
+        <li>Font awssome css set 'font-family:FontAwesome;' for the class 'fa'</li>
+        <li>Font awesome css set unicode character <code>&#x</code><strong>f0e0</strong><code>;</code> (in css <strong>\f0e0</strong>) for the class 'fa-envelope:before'</li>
+        <li>For example: we define our own class and get <span class="schoolemail"> teensprogramming@gmail.com</span></li>
+    </ul>
+    <p>Other font kits:</p>
+    <ul>
+        <li>glyphicons</li>
+        <li>IcoMoon</li>
+        <li>In frameworks, such as bootstrap, foundation</li>
+    </ul>
+</body>
+
+</html>

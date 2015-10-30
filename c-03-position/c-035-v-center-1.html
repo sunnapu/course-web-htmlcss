@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS center</title>
+    <style>
+    .container {
+    position: relative;
+    background: #59488b;
+    width: 200px;
+    height: 100px;
+}
+
+.block {
+    /* arbitray width and height */
+    width: 111px;
+    height: 33px;
+    background: #433669;
+    color: white;
+    /* 1 */
+    margin: auto;
+    /* in 'normal content flow', margin 'auto' equals 0 for the top and bottom. In 'absolute' position, it is not in normal content flow, so the top and bottom will be calculated by browser */
+    /* 2 */
+    position: absolute;
+    /* 3 steps */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+img {
+    /* arbitray width and height */
+    background: #433669;
+    color: white;
+    /* 1 */
+    margin: auto;
+    /* 2 */
+    position: absolute;
+    /* 3 steps */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Vertical center</h1>
+    <h3>1: absolute, vertical streching</h3>
+    <p>div in div</p>
+    <div class="container">
+        <div class="block">
+            center
+        </div>
+    </div>
+    <br>
+    <p>image in div</p>
+    <div class="container">
+        <img src="../images/dot.png" alt="">
+    </div>
+</body>
+
+</html>

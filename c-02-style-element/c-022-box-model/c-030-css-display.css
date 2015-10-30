@@ -1,0 +1,36 @@
+.block1 {
+    border: solid blue;
+}
+
+.block2 {
+    border: solid blue;
+    height: 100px;
+    width: 100px;
+}
+
+.inline-block1 {
+    border: solid blue;
+    display: inline-block;
+}
+
+.inline-block {
+    display: inline-block;
+    border: solid blue;
+    height: 100px;
+    width: 200px;
+}
+
+#inline1 {
+    display: inline;
+    border: solid blue 1px;
+}
+
+#inline2 {
+    display: inline;
+    border: solid blue 1px;
+}
+
+#none {
+    display: none;
+    /*    visibility: hidden;*/
+}

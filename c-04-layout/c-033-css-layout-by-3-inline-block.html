@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS position example 2 - use inline-block for layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            display: inline-block;
+            width: 25%;
+            padding-left: 30px;
+            padding-top: 30px;
+            vertical-align: top;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        .content {
+            display: inline-block;
+            width: 74%;
+        }
+        
+        .container {
+            position: relative;
+            border: solid #59488b 1px;
+        }
+        
+        section {
+            border: solid orange 1px;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 70px;
+            background-color: orange;
+            width: 100%;
+            border: solid #59488b 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a>
+                </li>
+                <li><a href="#">Posts</a>
+                </li>
+                <li><a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ipsa, facilis, repudiandae molestiae doloribus deserunt quas dolore quod pariatur distinctio tenetur eius ut doloremque praesentium beatae officia sint consequuntur perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, saepe, laborum odio quia repellat praesentium sunt consectetur ratione iusto magni eveniet beatae dolores? Deserunt voluptates dolores minus quam libero quis!
+            </section>
+            <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, tenetur eligendi veniam libero distinctio nesciunt quia veritatis quam porro nulla debitis amet expedita ut doloremque id deleniti architecto ipsum beatae!</section>
+            <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, in itaque enim asperiores fuga similique nesciunt sed id modi inventore vitae eaque distinctio sunt corporis molestiae magnam nemo blanditiis. Ipsa.</section>
+        </div>
+
+        <footer>
+            Copyright &copy; 2014 ...
+        </footer>
+    </div>
+</body>
+
+</html>

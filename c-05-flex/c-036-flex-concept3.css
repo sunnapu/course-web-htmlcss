@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* nowrap, wrap, wrap-reverse */
+    /*    flex-flow: row wrap;*/
+    /* flex-flow == flex-direction + flex-wrap */
+}
+
+.item {
+    flex-basis: 150px;
+    /* 'auto' is default */
+    /* value: auto, <'width'>, percentage */
+    /* specifies the initial main size of a flex item */
+
+}

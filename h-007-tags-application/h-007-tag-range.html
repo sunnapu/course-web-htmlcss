@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tag - Range</title>
+</head>
+<body>
+    <dl>
+        <dt>Red</dt>
+        <dd><input type="range" min="0" max="255" id='red'></dd>
+        <dt>Green</dt>
+        <dd><input type="range" min="0" max="255" id='green'></dd>
+        <dt>Blue</dt>
+        <dd><input type="range" min="0" max="255" id='blue'></dd>
+    </dl>
+    
+    <span id='coloris' style="display: inline-block; width: 100px; height: 100px; border: grey;"></span>
+    
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            function doesSupportRange() {
+                var i = document.createElement('input');
+                i.setAttribute('type','range');
+                return i.type==='range'
+            }
+
+            var coloris, red, green, blue;
+
+            if (doesSupportRange) {
+                coloris = document.querySelector('#coloris');
+                red = document.querySelector('#red');
+                green = document.querySelector('#green');
+                blue = document.querySelector('#blue');
+
+                coloris.style.backgroundColor='rgb('+[red.value, green.value, blue.value].join(',')+')'
+                
+                var body = document.querySelector('body');
+                body.addEventListener('input', function() {
+                    var redvalue = red.value;
+                    var greenvalue = green.value;
+                    var bluevalue = blue.value;
+                    coloris.style.backgroundColor='rgb('+redvalue+','+greenvalue+','+bluevalue+')';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

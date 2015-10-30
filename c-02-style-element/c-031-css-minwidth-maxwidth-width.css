@@ -1,0 +1,48 @@
+html {
+    background: #444444;
+    color: #ffffff;
+}
+
+.demo {
+    background: #000;
+}
+
+.background {
+    background: #e78629;
+}
+
+.max320 {
+    max-width: 320px;
+    width: 100%;
+}
+/* max 100 but min 700 */
+
+.max100min700 {
+    min-width: 700px;
+    max-width: 100px;
+    width: 100%;
+}
+/* width 1000% */
+
+.smallbox {
+    width: 20px;
+    background-color: #000;
+}
+
+.max1000 {
+    width: 1000%;
+}
+/* table */
+
+.maxtable {
+    width: 100%;
+    max-width: 600px;
+}
+
+.test {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    max-width: 20px;
+    min-width: 300px;
+}

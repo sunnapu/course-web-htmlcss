@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>recreate google page</title>
+    <style>
+        #bannerimage {
+            height: 120px;
+            
+            margin: auto;
+        }    
+        
+        #banner {
+            height: 210px;
+            clear: both;
+            
+            display: -webkit-flex;
+            display: flex;
+        }
+        
+        #buttongroup {
+            margin: auto;
+        }
+        
+        #buttons {
+            height: 25px;
+            
+            display: -webkit-flex;
+            display: flex;
+            margin-top: 10px;
+        }
+        
+        #buttons button {
+            font-size: 0.6em;
+            padding: 5px 6px 5px 6px;
+            
+            border-radius: 2px;
+            
+            margin : 0 20px 0 20px;
+            border: 0px none;
+            
+            background-color: #e6e6e6;
+        }
+        
+        #language {
+            font-size: 0.7em;
+            font-family: sans-serif;
+            
+            margin-top: 20px; 
+            text-align: center;
+        }
+        
+        #search {
+            height: 20px;
+            
+/*            vertical-align: middle;*/
+        }
+        
+        #searchgroup {
+            position: relative;
+            border: solid lightgray thin;
+            width: 90%;
+            height: 100%;
+            
+            display: -webkit-flex;
+            display: flex;
+            
+            margin: auto;
+            z-index: 2;
+            
+            outline: 1px;
+        }
+        
+        #searchgroup:focus {
+            border: solid blue thin;
+        }
+        
+        #searchtext {
+            outline: none;
+            width: 100%;
+            margin: 0px;
+            
+            border: none;
+            border-radius: 0px;
+            
+            z-index: 1;
+            padding-left: 4px;
+        }
+        
+        #voice {
+            position: absolute;
+            right: 1px;
+            
+            z-index: 3;
+            height: 15px;
+            margin: auto;
+            
+            padding: 2px;
+        }
+        
+        #nav {
+            font-size: 10px;
+            font-family: sans-serif;
+            
+            width: 250px;
+            float: right;
+            
+            text-align: right;
+        }
+        #nav a {
+            display: inline-block;
+            height: 11px;
+            text-decoration: none;
+            color: black;
+            vertical-align: middle; /* since the anchor #apps and #notifications has no context, only has a background color, these two will move up a little bit. so I add vertical-align to fix this */
+            
+            margin-right: 8px;
+        }
+        
+        #apps {        
+            width: 12px;
+            
+            background-image: url("https://ssl.gstatic.com/gb/images/i2_5d4da36d.png");
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: -24px -64px;
+        }
+        
+        #notifications {
+            width: 12px;
+            
+            background-image: url("https://ssl.gstatic.com/gb/images/i2_5d4da36d.png");
+            
+            background-size: 180px;
+            background-position: 0px -3px;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="nav">    
+        <a href="https://plus.google.com/u/0/?tab=wX">+Napu</a>
+        <a href="https://mail.google.com/mail/?tab=wm&authuser=0">Gmail</a>
+        <a href="https://www.google.ca/imghp?hl=en&tab=wi&authuser=0&ei=VHAUVLX4KMGuyATLhID4Aw&ved=0CAQQqi4oAg">Images</a>
+        <a id="apps" href="http://www.google.ca/intl/en/options/"></a>
+        <a id='notifications'  href="https://plus.google.com/u/0/notifications/all?hl=en"></a> 
+        <a href="https://plus.google.com/u/0/stream/all?hl=en">Share</a>
+    </div>
+    
+    <div id="banner">
+        <img id='bannerimage' src="https://www.google.ca/logos/doodles/2014/laura-secords-239th-birthday-5687462231801856-hp.jpg" alt="">
+    </div>
+    
+    <div id='search'>
+        <div id="searchgroup">
+            <input id='searchtext' type="text">
+            <img id='voice' src="data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAAAP///yH5BAEAAAcALAAAAAAcACYAAAO9eLpMIMYIQJi9DcYtKv6KtnHgB4yoAZSXKAyDy1rjoAzjzOQLrx8+4OanCAZnxiExGSEKmz3lj2lwUq3SZ3WZPbKuXGgxu9t4tLYDTkpIRQILF0x2G4lWipM7gj/oJQUkcXsCDCIFATULBCIcZ2tvB3QLDxETFnR/BgU/gRt9jX0gnpYMkJZpFzEoqQqJKAIBaQOVKHAXr3t7txgBjboSvB8EpLoFZywOAo3LFE5lYs/QW9LT1TRk1V7S2xYJADs=" alt="">
+        </div> 
+    </div>
+    <div id='buttons'>
+        <div id="buttongroup">
+            <button id='buttonsearch'>Google Search</button>
+            <button id='buttonlucky'>I'm Feeling Lucky</button>
+        </div>
+    </div>    
+    <div id='language'>Google.ca offered in: <a href="https://www.google.ca/setprefs?sig=0_jqA7gCqn8nrcf31BmY9LBeSYpaw%3D&hl=fr&source=homepage">Français</a></div>
+    
+    <script>
+            var searchtext = document.getElementById('searchtext');
+
+            searchtext.onfocus = function(){
+                this.parentNode.style.borderColor = '#3E82F7';
+            }
+            searchtext.onblur = function(){
+                this.parentNode.style.borderColor = 'lightgrey';
+            }
+    </script>
+</body>
+</html>

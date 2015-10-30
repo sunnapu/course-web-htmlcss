@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS pesudo class selector</title>
+    
+    <style>
+        ul.inline li {
+            display: inline;
+            font-size: 20px;
+        }
+        
+        ul.inline a {
+            text-decoration: none;
+            color: #7f232f;
+        }
+        
+        ul.inline.content li:after {
+            content: '|';
+        }
+        
+        ul.image li:after {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+            margin-right: 5px;
+            
+            content: '';
+            background: url("/images/dot.png") no-repeat 0 0; /* image no-repeat right top */
+            background-size: 100%;    
+        }
+        
+        ul.inline li:last-child:after {
+            content: '';
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Posts</a>
+        </li>
+        <li class='end'>
+            <a href="#">About</a>
+        </li>
+    </ul>
+    
+    <ul class='inline content'>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Posts</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+    </ul>
+    
+    <ul class='inline image'>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Posts</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+    </ul>
+</body>
+</html>

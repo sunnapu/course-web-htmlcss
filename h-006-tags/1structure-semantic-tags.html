@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html new tag for structure</title>
+    <style>
+        * {
+            padding: 10px;
+            text-align: center;
+            margin: 10px 0 10px 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        body {
+            /*            background-color: gray;*/
+            
+            border: solid;
+        }
+        
+        body * {
+            background-color: dimgray;
+            color: white;
+        }
+        
+        div {
+            background-color: dimgrey;
+            color: white;
+        }
+        
+        section {
+            background-color: black;
+        }
+        
+        section h2,
+        section p {
+            text-align: left;
+        }
+        
+        article {
+            float: left;
+            width: 69%;
+            height: 260px;
+        }
+        
+        aside {
+            float: right;
+            width: 30%;
+            height: 260px;
+        }
+        
+        footer {
+            clear: both;
+        }
+        
+        nav {
+            text-align: right;
+        }
+        
+        h2,
+        p {
+            background-color: grey;
+        }
+        
+        ul li {
+            margin: 0px 0px 0px 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>navigation bar
+        <a href="#">1</a> |
+        <a href="#">2</a> |
+        <a href="#">3</a> |
+        <a href="#">4</a>
+    </nav>
+    <article>
+        <section>section 1
+            <h2>heading</h2>
+            <p>paragraph</p>
+        </section>
+        <section>section 2</section>
+    </article>
+    <aside>sidebar
+        <h2>Archives</h2>
+        <ul>
+            <li><a href="#">link</a>
+            </li>
+            <li><a href="#">link</a>
+            </li>
+            <li><a href="#">link</a>
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>

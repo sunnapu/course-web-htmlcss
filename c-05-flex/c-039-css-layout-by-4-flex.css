@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    border: solid #39466b 1px;
+    margin: 10px;
+}
+
+/* flex-shrink default is 1 */
+/* flex-basis in here the default is 0%, that means it is absolute flex */
+nav {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.content {
+    -webkit-flex: 4;
+    flex: 4;
+}
+
+section {
+    border: solid orange 1px;
+}

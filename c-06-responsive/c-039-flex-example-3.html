@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-size: 1.4em;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: solid black 10px;
+            width: 300px;
+            height: 450px;
+        }
+        
+        header,
+        article,
+        nav,
+        aside,
+        footer {
+            margin: 4px;
+            padding: 4px;
+            border-radius: 7pt;
+            background-color: grey;
+        }
+        
+        header,
+        nav,
+        aside,
+        footer {
+            -webkit-flex: 1;
+            flex: 1;
+        }
+        
+        article {
+            -webkit-flex: 8;
+            flex: 8;
+        }
+        
+        header,
+        footer {
+            background: tomato;
+        }
+        
+        article {
+            background: lightgreen;
+        }
+        
+        nav {
+            background: lightblue;
+        }
+        
+        aside {
+            background: lightpink;
+        }
+        
+        @media all and (min-width: 600px) {
+            body {
+                font-size: 44px;
+            }
+            .container {
+                flex-flow: row wrap;
+                border: solid black 40px;
+                width: 700px;
+                height: 400px;
+            }
+            header,
+            footer {
+                flex-basis: 100%;
+            }
+            
+            header {
+                order: 1;
+            }
+            footer {
+                order: 5;
+            }
+            article {
+                flex: 3;
+                order: 3;
+            }
+            nav {
+                flex: 1;
+                order: 2;
+            }
+            aside {
+                flex: 1;
+                order: 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>header</header>
+        <article>article</article>
+        <nav>nav</nav>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

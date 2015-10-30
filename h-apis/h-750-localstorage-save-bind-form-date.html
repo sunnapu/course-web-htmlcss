@@ -1,0 +1,60 @@
+```
+title: Local storage - save and bind form data
+isExample: true
+```
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local storage - Save and bind form data</title>
+</head>
+<body>
+    <form action="">
+        Input name: <input type="text" name="title"><br>
+        Input comment: <textarea name="comment"></textarea><br>
+        Show to public: <input type="checkbox" name="someCheck"><br>
+        Do you like this:  <input type="radio" name="iflike" id="yes" value="yes">Like
+        <input type="radio" name="iflike" id="no" value="no">Don't like
+        <input type="radio" name="iflike" id="notsure" value="notsure">Not sure<br>
+        
+        <input type="submit">
+    </form>
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <script>
+        var form = $('form');
+        
+        if (localStorage.formdata) {
+            (function bindStorageToForm() {
+                var formdata = localStorage.formdata;
+                var formdatasplit = formdata.split('&');
+                var keyvaluepair;
+                
+                $.each(formdatasplit, function(i, val) {
+                    keyvaluepair=val.split('=');
+                    console.log(keyvaluepair);
+                    if (!keyvaluepair[1]) return true; //Jquery way for continue
+                    
+                    if (keyvaluepair[0]==='iflike') {
+                        $('#'+keyvaluepair[1])[0].checked = true;
+                    }
+                    
+                    if (keyvaluepair[1]==='on') {
+                        form[0][keyvaluepair[0]].checked = true;
+                    }
+                    
+                    form[0][keyvaluepair[0]].value=
+                    decodeURI(keyvaluepair[1]).replace(/\+/g, ' ');
+                });
+            })();
+        };
+        
+        $('form').submit(function(e) {
+            e.preventDefault();
+            localStorage.formdata=$(this).serialize();
+        });
+    </script>
+</body>
+</html>
