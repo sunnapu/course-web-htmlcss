@@ -13,6 +13,12 @@
     margin: 2px;
 }
 
+/* code to focus */
+
+.container.wrap {
+    flex-wrap: wrap;
+}
+
 .long {
     margin: 2px 0px;
 }

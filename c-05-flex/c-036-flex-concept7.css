@@ -16,8 +16,11 @@
     /* When omitted, it is set to 1 and the flex shrink factor is multiplied by the flex basis. */
     
     flex: 1 1 auto;
-    /* value: none, flex-grow flex-shrink flex-basis */
+    /* possible values: none, flex-grow flex-shrink flex-basis */
     /* value 'none' means 0 0 auto */
+    /* flex: 2 auto; means flex-grow:2, flex-shrink:1, flex-basis: auto */
+    /* flex: 2 2; means flex-basis:0%; */
+    /* flex: 2; means flex-thrink:1, flex-basis is 0%; */
 }
 
 .i2, .i3, .i4, .i5, .i6 {

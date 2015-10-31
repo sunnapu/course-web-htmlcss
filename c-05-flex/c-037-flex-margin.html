@@ -8,37 +8,35 @@
         .container {
             display: -webkit-flex;
             display: flex;
+            flex-flow: row wrap;
             width: 500px;
             height: 300px;
             background-color: burlywood;
+            
+/*
+            justify-content: center;
+            align-items: center;
+*/
+            
         }
         
         .flex-item {
             background-color: aqua;
-            width: 100px;
             height: 100px;
-            margin: 5px;
+            width: 100px;
         }
         
-        .flex-item.marginleft {
-            margin-left: auto;
-        }
-        
-        .flex-item.center {
+        /* code to focus on */
+        /* or use justify-content and align-items in container */
+        .flex-item {
             margin: auto;
-            /* comment this out to see difference */
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="flex-item">flex item 1</div>
-        <div class="flex-item">flex item 2</div>
-        <div class="flex-item marginleft">flex item 3</div>
-    </div>
-    <div class="container">
-        <div class="flex-item center">flex item 4</div>
+        <div class="flex-item">flex item 4</div>
     </div>
 </body>
 
