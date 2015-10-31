@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity</title>
+    <style>
+        .example {
+            border: solid tomato 4px;
+        }
+        /* code to focus on */
+        
+        /* long path > short path */
+        #container p {
+            background-color: coral;
+        }
+        
+        /* id > class > tag */
+        #pid {
+            background-color: green;
+        }
+        
+        .paragraph {
+            background-color: lightblue;
+        }
+        
+        div div p {
+            background-color: saddlebrown;
+        }
+        
+        div p {
+            background-color: rebeccapurple;
+        }
+        
+        p {
+            background-color: aqua;
+        }
+        
+        /* 
+    </style>
+</head>
+
+<body>
+    <h1>Selector specificity</h1>
+    <ol>
+        <li>inline style > ID > Class > tag</li>
+        <li>long path > short path</li>
+        <li>if specificity is same, the last rule override the privous rules</li>
+        <li>div p == div>p </li>
+    </ol>
+    <hr>
+    <!--    This topic can be more interesting, <a href="http://css-tricks.com/specifics-on-css-specificity/">read more.</a>-->
+    <h3>Example, given a structure: div#container>h3+div>p#pid</h3>
+    <div class="example">
+        <div id="container">
+            <h4>H3 text</h4>
+            <div>
+                <p id="pid" class="paragraph"> Paragraph <span>text</span></p>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+        <li>Both selectors are using id, the rule "long path" is picked up. #container p > #pid</li>
+        <li>Write style="background-color: yellow" for #pid, the inline style has the highest prioirty</li>
+    </ul>
+
+</body>
+
+</html>

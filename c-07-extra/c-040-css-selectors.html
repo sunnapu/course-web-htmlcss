@@ -148,17 +148,6 @@
             </tr>
         </table>
     </div>
-
-    <h1>Selector specificity</h1>
-    <p>inline style > ID > Class > long tag path > short tag path, if specificity is same, the last rule override the privous rules. </p>
-<!--    This topic can be more interesting, <a href="http://css-tricks.com/specifics-on-css-specificity/">read more.</a>-->
-    <p>if having a structure: div#someid>img+div>img#imgid</p>
-    <div id="someid">
-        <img src="" alt="">
-        <div><img src="" alt="" id="imgid"></div>
-    </div>
-    <p>#someid img > #imgid, because both selector start with id, then compare which is longer</p>
-    <p>#someid div img > #someid img </p>
 </body>
 
 </html>
