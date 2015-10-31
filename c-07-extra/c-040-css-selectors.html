@@ -16,17 +16,22 @@
         }
         
         p.yellow {
-            color: Yellow;
-            background-color: black;
+            color: blue;
         }
         
         p#purple {
             color: purple;
         }
         
-        h5:hover {
-            color: green;
+        [data-att] {
+            color: tomato;    
         }
+        
+        h5:hover {
+            color: white;
+            background-color: black;
+        }
+        
         /* excercise */
         
         div table {
@@ -52,28 +57,38 @@
         div td:last-child {
             background-color: pink;
         }
+        
+        div td:nth-child(2) {
+            background-color: green;
+        }
+        
+        [data-test] { /* or td[data-test] */
+            color: red;
+        }
     </style>
 </head>
 
 <body>
     <h1>Selectors</h1>
-    <abc>Tag selector: set 'red' color to this text.</abc>
+    <abc>Tag selector</abc>
 
     <p>
         <abc>
-            <bcd>Multiple selector: set 'pink' color to this text.
+            <bcd>Multiple selector
             </bcd>
         </abc>
     </p>
 
     <p>
-        <bcd>Direct child selector: set 'Orange' color to this text.
+        <bcd>Direct child selector
         </bcd>
     </p>
 
-    <p class='yellow'>Class selector: set 'yellow' color and 'black' background color to this text.</p>
+    <p class='yellow'>Class selector</p>
 
-    <p id='purple'>Id selector: set 'purple' color to this text.</p>
+    <p id='purple'>Id selector</p>
+    
+    <p data-att="att-value">Attribute selector</p>
 
     <h5>Pseudo-class selectors: the elements are not part of the html document such as :hover, :first-child etc</h5>
 
@@ -94,6 +109,7 @@
         <li>
             use 'pesudo-class selector', set the 3rd column with background-color 'pink'
         </li>
+        <li>use :nth-child(2)</li>
     </ul>
     <h4>Table without style</h4>
     <table>
@@ -137,7 +153,7 @@
                 <td id='ilike'>300</td>
             </tr>
             <tr>
-                <td>400</td>
+                <td data-test="att-test">400</td>
                 <td>500</td>
                 <td class='largeequal600'>600</td>
             </tr>
