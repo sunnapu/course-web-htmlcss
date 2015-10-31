@@ -10,6 +10,11 @@
         }
         /* code to focus on */
         
+        /* if specificities are the same, the last rule applied */
+        p#pid {
+            background-color: cornflowerblue;
+        }
+        
         /* long path > short path */
         #container p {
             background-color: coral;
@@ -63,6 +68,7 @@
     <ul>
         <li>Both selectors are using id, the rule "long path" is picked up. #container p > #pid</li>
         <li>Write style="background-color: yellow" for #pid, the inline style has the highest prioirty</li>
+        <li>#container p == p#pid</li>
     </ul>
 
 </body>
