@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>width 100% vs auto vs 0</title>
+    <style>
+        div,
+        span {
+            height: 100px;
+            background-color: tomato;
+        }
+        
+        /* code to focus on */
+        .100per {
+            width: 100%;
+        }
+        
+        .auto {
+            width: auto;
+        }
+        
+        .zero {
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>In the case of 'block' type</h2>
+    <div class="100per"></div>
+    <br>
+    <div class="auto"></div>
+    <br>
+    <div class="zero">Lorem ipsum dolor sit amet</div>
+
+    <br>
+    <h2>In the case of 'inline' type</h2>
+    <p><span class="100per">Lorem ipsum dolor sit amet</span></p>
+    <p><span class="auto">Lorem ipsum dolor sit amet</span></p>
+    <p><span class="zero">Lorem ipsum dolor sit amet</span></p>
+</body>
+
+</html>
