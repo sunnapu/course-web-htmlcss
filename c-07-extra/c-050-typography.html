@@ -3,6 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
+    <style>
+        pre {
+            font-family: Gill, Helvetica, sans-serif;
+        }
+        
+        .showfonts {
+            display: inline-block;
+            border: solid tomato 4px;
+        }
+        
+        .serif,
+        .sans-serif,
+        .cursive,
+        .fantasy,
+        .monospace {
+            font-size: 30px;
+        }
+        
+        .serif {
+            font-family: serif;
+        }
+        
+        .sans-serif {
+            font-family: sans-serif;
+        }
+        
+        .cursive {
+            font-family: cursive;
+        }
+        
+        .fantasy {
+            font-family: fantasy;
+        }
+        
+        .monospace {
+            font-family: monospace;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,12 +61,20 @@ body {
         </li>
         <li>font family (such as Gill, Helvetica)</li>
         <li>generic font families (such as sans-serif, fallback mechanism), sans-serif includes Gill and Helvetica etc)</li>
-        <li>5 generic font families: serif, sans-serif, cursive, fantasy, monospace</li>
+        <li>5 generic font families:
+            <div class='showfonts'>
+                <span class='serif'>serif</span>,
+                <span class='sans-serif'>sans-serif</span>,
+                <span class='cursive'>cursive</span>,
+                <span class='fantasy'>fantasy</span>,
+                <span class='monospace'>monospace</span>
+            </div>
+        </li>
     </ul>
 
     <h3>Some tools</h3>
     <a href="http://www.myfonts.com/WhatTheFont/">Find out fonts from image</a>
-    
+
     <h3>terms:</h3>
     <img src="../images/Typography_Line_Terms.svg" alt="">
 </body>
