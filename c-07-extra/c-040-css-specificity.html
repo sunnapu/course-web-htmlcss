@@ -11,37 +11,39 @@
         /* code to focus on */
         
         /* if specificities are the same, the last rule applied */
+/*
         p#pid {
             background-color: cornflowerblue;
         }
+*/
         
         /* long path > short path */
+/*
         #container p {
             background-color: coral;
         }
+*/
         
-        /* id > class > tag */
+        /* id > class or attribute > tag */
         #pid {
             background-color: green;
         }
         
+        p:first-child {
+            background-color: red;
+        }
+        
+        [data-p="data-p-value"] {
+            background-color: navy;
+        }
+
         .paragraph {
             background-color: lightblue;
         }
-        
-        div div p {
-            background-color: saddlebrown;
-        }
-        
-        div p {
-            background-color: rebeccapurple;
-        }
-        
+
         p {
             background-color: aqua;
         }
-        
-        /* 
     </style>
 </head>
 
@@ -60,7 +62,7 @@
         <div id="container">
             <h4>H3 text</h4>
             <div>
-                <p id="pid" class="paragraph"> Paragraph <span>text</span></p>
+                <p id="pid" data-p="data-p-value" class="paragraph"> Paragraph <span>text</span></p>
             </div>
         </div>
     </div>
