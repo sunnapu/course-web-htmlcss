@@ -4,81 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <title>text</title>
+    <style>
+        .tags-explain {
+            border-left: solid tomato 4px;
+            border-bottom: solid tomato 1px;
+            padding-left: 10px;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <h4>Text: b, i; strong, em; sup, sub; br, hr; blockquote, q; abbr; cite, dfn; address; ins, del, s; bdo; code, samp, kbd, var;</h4>
-    <hr>
-
+    <div class="tags-explain">Bold, Italic</div>
     <p>
         <b>bold</b> <i>italic</i>
     </p>
-
+    <div class="tags-explain">Strong, Emphasize</div>
     <p>
         <strong>strong</strong> <em>em</em>
     </p>
 
-    <code>var <var>str</var> = "hello world";
+    <div class="tags-explain">code, variable, sample output, keyboard input</div>
+    <div class="jscode">
+        > <code> var <var>str</var> = "Hello world";
     console.log(str);
-    </code>
-    <p>Code output: <samp>hello world</samp>
-    </p>
-    <p><kbd>keyboard input</kbd>
-    </p>
+        </code>
+        <div>> <samp>Hello world</samp> </div>
+        <div>> <kbd>keyboard input</kbd> </div>
+    </div>
 
+    <div class="tags-explain">Small text, Big text</div>
     <p><small>small text</small>
     </p>
     <p><big>big text (but not supported in html5)</big>
     </p>
 
+    <div class="tags-explain">Superscript, Subscript</div>
     <p>
         1<sup>st</sup>, H<sub>2</sub>O
     </p>
 
-    <p>HTML write document with structure, semantics, &nbsp; &nbsp; and connect docs together.
-        <br>CSS give document style.
+    <div class="tags-explain">Space, New line</div>
+    <p>&nbsp; &nbsp; HTML gives document structures, semantics, and links to connect documents.
         <br>br stands for break.
     </p>
 
-    <hr>What is web development?
+    <div class="tags-explain">Block Quote</div>
     <blockquote>
         Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web) or an intranet (a private network).
     </blockquote>
+    <hr>
 
+    <div class="tags-explain">Quote</div>
     <p>
         Steve jobs said <q>Stay hungry, stay foolish</q>
     </p>
 
+    <div class="tags-explain">Abbreviation</div>
     <p>
         <abbr title="World Wide Web Consortium">W3C</abbr> is the main standards organization for the World Wide Web.
     </p>
 
+    <div class="tags-explain">Citation</div>
     <p>
         <cite>Sophie's World</cite> talks about the history of philosophy
     </p>
 
+    <div class="tags-explain">Definition</div>
     <p>
         <dfn>Closure</dfn> is a function that can access variables from its external function.
     </p>
 
-    <hr>
+    <div class="tags-explain">Address</div>
     <address>
        123 windermere rd
     </address>
+
+    <div class="tags-explain">Insert, Delete</div>
     <p>
         Teens Programming is a <ins>london-based</ins> computer programming school <del>based in london</del>.
     </p>
+
+    <div class="tags-explain">Strikethrough</div>
     <p>
-        new price: $160 (old price: <s>$300</s>), s tag specifies text that is no longer correct, accurate or relevant.
+        new price: $160 (old price: <s>$300</s>), s tag specifies text that is not correct or relevant any more.
     </p>
 
-    <p>Bi-Directional Override (bdo)</p>
-    <h1><bdo dir='rtl'>abcdefg</bdo></h1>
+    <div class="tags-explain">Bi-Directional Override</div>
+    <bdo dir='rtl'>123456</bdo>
 
+   <div class="tags-explain">Time</div>
     <p>
         <time datetime="2015-12-25 12:00am">2015 Chrismas</time>
     </p>
 
+   <div class="tags-explain">Marker</div>
     <p>Today is my
         <mark>birthday</mark>.</p>
 </body>

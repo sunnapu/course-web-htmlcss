@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            border: solid 2px black;
+            border-collapse: collapse;
+        }
+        
+        table * {
+            padding: 2px;
+        }
+        
+        th {
+            background-color: lightgreen;
+        }
+        
+        #median {
+            background-color: yellow;
+            font-size: 1.2em;
+        }
+        
+        td:last-child {
+            background-color: lightblue;
+        }
+        
+        td.largeequal600 {
+            background-color: pink;
+        }
+        
+        td.largeequal600:nth-child(2) {
+            color: blue;
+        }
+        [data-value] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Excercise: </h1>
+    <ul>
+        <li>use 'tag selector', set table border with style 'solid 2px lightblue'</li>
+        <li>use 'multiple selector', set rows background-color 'skyblue'
+        </li>
+        <li>
+            use 'direct child selector', set rows (except the table head row) background-color 'white'
+        </li>
+        <li>
+            use 'class selector', set cell with number >= 600 font color 'navy'
+        </li>
+        <li>
+            use 'id selector', set a number you like with color 'brown'
+        </li>
+        <li>
+            use 'pesudo-class selector', set the 3rd column with background-color 'pink'
+        </li>
+        <li>use :nth-child(2)</li>
+    </ul>
+
+    <div>
+        <table>
+            <tr>
+                <th>1st column</th>
+                <th>2nd column</th>
+                <th>3rd column</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td id="median">500</td>
+                <td class='largeequal600'>600</td>
+            </tr>
+            <tr>
+                <td class='largeequal600'>700</td>
+                <td class='largeequal600'>800</td>
+                <td data-value="900" class='largeequal600'>900</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
