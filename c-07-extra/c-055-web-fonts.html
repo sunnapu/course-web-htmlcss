@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS font face</title>
+<!--    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>-->
     <style>
         @font-face {
-            /* give font name, it can be any name */
             font-family: 'Permanent Marker';
-            font-style: normal;
-            font-weight: 400;
             src: local('Permanent Marker'), local('PermanentMarker'), url(http://themes.googleusercontent.com/static/fonts/permanentmarker/v3/9vYsg5VgPHKK8SXYbf3sMmVSxyvLCPm9firj_jMeQtQ.woff) format('woff');
             /* try to use local font, 2 different name are tried, if don't have that font installed, then, download font */
         }
-        /* or download font, use in project, url(/font/PermanentMarker-cursive.woff) */
         
+/*        @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);*/
+        
+        
+        /* or download font, use in project, url(/font/PermanentMarker-cursive.woff) */
         p {
-            font-family: 'Permanent Marker';
-            font-size: 35px;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 50px;
             color: tomato;
         }
     </style>
@@ -37,7 +38,7 @@
         <li>
             By Javascript <a href="https://www.google.com/fonts#QuickUsePlace:quickUse">Google fonts</a>
         </li>
-        <li>Use @font-face, first define a name for the font (e.g. 'Permanent Marker'), and then point to the font file.</li>
+        <li>Use @font-face to define a name for the font (e.g. 'Permanent Marker'), and set the font source.</li>
     </ul>
 
     <h2>Resources to find web fonts</h2>

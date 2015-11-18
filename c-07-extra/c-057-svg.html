@@ -4,23 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>svg</title>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-    <style>
-        .icon-green {
-            color: green;
-            line-height: 2;
-            text-decoration: overline;
-            opacity: 0.5;
-            font-size: 10em;
-            transition: all .5s ease-in-out;
-            text-shadow: 3px 4px 5px #000000;
-        }
-        
-        .icon-green:hover {
-            margin-left: .1em;
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body>
@@ -32,14 +15,10 @@
         <li>Accurately style SVG using CSS</li>
     </ul>
 
-    <div class="container">
-        <p><i class="fa fa-envelope icon-green"></i></p>
-    </div>
+<!--    <h3>use SVG as an image (don't have much CSS control)</h3>-->
+<!--    <img src="../images/flex/flex-align.svg" alt="">-->
 
-    <h3>use SVG as an image (don't have much CSS control)</h3>
-    <img src="../images/flex/flex-align.svg" alt="">
-
-    <h3>embed SVG in html (have CSS controls)</h3>
+<!--    <h3>embed SVG in html (have CSS controls)</h3>-->
     <svg xmlns="http://www.w3.org/2000/svg" width='508' height='377'>
         <defs>
             <pattern id='checker' width='20' height='20' patternUnits='userSpaceOnUse'>
@@ -52,6 +31,7 @@
         <style>
             svg {
                 overflow: visible;
+                border: solid 40px;
             }
             
             .label {
@@ -71,6 +51,7 @@
             
             .one {
                 fill: #e35858;
+                fill: red;
             }
             
             .two {
