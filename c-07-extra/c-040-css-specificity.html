@@ -39,16 +39,15 @@
         
         p {
             background-color: aqua;
+/*            background-color: aqua !important;*/
         }
-        
-        /* 
     </style>
 </head>
 
 <body>
     <h1>Selector specificity</h1>
     <ol>
-        <li>inline style > ID > Class > tag</li>
+        <li>!important > inline style > ID > Class >  tag</li>
         <li>long path > short path</li>
         <li>if specificity is same, the last rule override the privous rules</li>
         <li>div p == div>p </li>
@@ -60,7 +59,7 @@
         <div id="container">
             <h4>H3 text</h4>
             <div>
-                <p id="pid" class="paragraph"> Paragraph <span>text</span></p>
+                <p style="" id="pid" class="paragraph"> Paragraph text</p>
             </div>
         </div>
     </div>
