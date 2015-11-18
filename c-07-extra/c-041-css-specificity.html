@@ -9,32 +9,32 @@
             border: solid tomato 4px;
         }
         /* code to focus on */
-        
         /* if specificities are the same, the last rule applied */
+        
         p#pid {
             background-color: cornflowerblue;
         }
-        
         /* long path > short path */
+        
         #container p {
             background-color: coral;
         }
+        /* id > class or attribute > tag */
         
-        /* id > class > tag */
         #pid {
             background-color: green;
+        }
+        
+        p:first-child {
+            background-color: red;
         }
         
         .paragraph {
             background-color: lightblue;
         }
         
-        div div p {
-            background-color: saddlebrown;
-        }
-        
-        div p {
-            background-color: rebeccapurple;
+        [data-p="data-p-value"] {
+            background-color: navy;
         }
         
         p {
@@ -46,6 +46,7 @@
 
 <body>
     <h1>Selector specificity</h1>
+<<<<<<< HEAD:c-07-extra/c-040-css-specificity.html
     <ol>
         <li>!important > inline style > ID > Class >  tag</li>
         <li>long path > short path</li>
@@ -54,22 +55,28 @@
     </ol>
     <hr>
     <!--    This topic can be more interesting, <a href="http://css-tricks.com/specifics-on-css-specificity/">read more.</a>-->
-    <h3>Example, given a structure: div#container>h3+div>p#pid</h3>
     <div class="example">
         <div id="container">
             <h4>H3 text</h4>
             <div>
-                <p style="" id="pid" class="paragraph"> Paragraph text</p>
+                <p id="pid" data-p="data-p-value" class="paragraph"> Paragraph <span>text</span></p>
             </div>
         </div>
     </div>
-
+    <h3>Note</h3>
     <ul>
-        <li>Both selectors are using id, the rule "long path" is picked up. #container p > #pid</li>
-        <li>Write style="background-color: yellow" for #pid, the inline style has the highest prioirty</li>
+        <li>Both selectors are using id, the rule "long path" is picked up. #container p > p#pid</li>
+        <li>Write style="background-color: yellow" for #pid, the inline style has more higher prioirty</li>
         <li>#container p == p#pid</li>
     </ul>
-
+    <h3>Summary</h3>
+    <ol>
+        <li>!important > inline style > ID > Pesudo class > Class or Attribute > tag</li>
+        <li>long path > short path</li>
+        <li>if specificity is same, the last rule override the privous rules</li>
+        <li>div p == div>p </li>
+    </ol>
+    <hr>
 </body>
 
 </html>
