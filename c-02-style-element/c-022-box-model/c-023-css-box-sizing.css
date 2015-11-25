@@ -8,21 +8,21 @@
 .container {
     width: 600px;
     height: 200px;
-    border: solid green 4px;
+    background-color: aqua;
     box-sizing: content-box;
 }
 
 .left {
     width: 300px;
-    height: 200px;
+    height: 100px;
     display: inline-block;
-    background: yellow;
-    border: solid purple 40px;
+    background-color: blueviolet;
+    border: solid 10px;
 }
 
 .right {
     width: 300px;
-    height: 200px;
+    height: 100px;
     display: inline-block;
-    background: red;
+    background-color: cadetblue;
 }
