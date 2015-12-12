@@ -4,91 +4,86 @@
 <head>
     <style>
         body {
-            font-size: 1.4em;
-            box-sizing: border-box;
+            font-size: 2em;
         }
         
         .container {
+            border: solid 10px;
+            width: 260px;
+            height: 400px;
             display: flex;
             flex-direction: column;
-            border: solid black 10px;
-            width: 300px;
-            height: 450px;
-        }
-        
-        header,
-        article,
-        nav,
-        aside,
-        footer {
-            margin: 4px;
-            padding: 4px;
-            border-radius: 7pt;
-            background-color: grey;
         }
         
         header,
         nav,
         aside,
         footer {
-            -webkit-flex: 1;
             flex: 1;
         }
         
-        article {
-            -webkit-flex: 8;
-            flex: 8;
-        }
-        
-        header,
-        footer {
-            background: tomato;
-        }
-        
-        article {
-            background: lightgreen;
+        header {
+            background-color: aqua
         }
         
         nav {
-            background: lightblue;
+            background-color: navajowhite;
         }
         
         aside {
-            background: lightpink;
+            background-color: coral;
+        }
+        
+        footer {
+            background-color: fuchsia;
+        }
+        
+        article {
+            flex: 8;
+            background-color: chartreuse;
         }
         
         @media all and (min-width: 600px) {
-            body {
-                font-size: 44px;
+            header, article, nav, aside, footer {
+                /* padding: 10px;*/
+                /* by adding padding, the flex-basis:0 will not ignore the content in the element */
+                /* that means with padding, setting flex-basis:auto is not necessary */
             }
             .container {
-                flex-flow: row wrap;
-                border: solid black 40px;
+                border: solid 40px rgba(0, 0, 0, 0.5);
                 width: 700px;
-                height: 400px;
+                flex-direction: row;
+                flex-wrap: wrap;
             }
-            header,
+            header {
+                flex-basis: 100%;
+            }
             footer {
                 flex-basis: 100%;
             }
-            
+            nav,
+            aside {
+                flex-basis: auto;
+                /*                flex-basis: 0;*/
+                flex-grow: 1;
+            }
+            article {
+                flex-basis: auto;
+                /* flex-basis: 0;*/
+                flex-grow: 4;
+                order: 3;
+            }
+            nav {
+                order: 2;
+            }
+            aside {
+                order: 4;
+            }
             header {
                 order: 1;
             }
             footer {
                 order: 5;
-            }
-            article {
-                flex: 3;
-                order: 3;
-            }
-            nav {
-                flex: 1;
-                order: 2;
-            }
-            aside {
-                flex: 1;
-                order: 4;
             }
         }
     </style>
