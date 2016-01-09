@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .face {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+        
+        .eye {
+            width: 63px;
+            height: 72px;
+            border-radius: 73px;
+            background-color: white;
+            position: absolute;
+            top: 38px;
+        }
+                
+        .eyeball {
+            background-color: black;
+            width: 39px;
+            height: 43px;
+            border-radius: 42px;
+            position: absolute;
+            left: 4px;
+            top: 10px;
+        }
+        
+        .left {
+            left:56px;
+        }
+        
+        .right {
+            left: 122px;
+        }
+        
+        .mouth {
+            width: 100px;
+            height: 20px;
+            border: solid 8px black;
+            border-top: none;
+            border-radius: 0 0 120px 120px / 0 30px 52px 52px;
+            position: absolute;
+            top: 131px;
+            left: 50px;
+        }
+        
+        .corner {
+            position: absolute;
+            background-color: black;
+            width: 7px;
+            height: 20px;
+            border-radius: 10px;
+            top: 124px;
+        }
+        
+        .corner.right {
+            left: 160px;
+            transform: rotate(153deg)
+        }
+        
+        .corner.left {
+            left: 49px;
+            transform: rotate(47deg);
+        }
+        
+        body {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="face">
+        <div class="eye left">
+            <div class="eyeball">
+            </div>
+        </div>
+        <div class="eye right">
+            <div class="eyeball"></div>
+        </div>
+        <div class="mouth"></div>
+        <div class="corner left"></div>
+        <div class="corner right"></div>
+    </div>
+
+</body>
+
+</html>
