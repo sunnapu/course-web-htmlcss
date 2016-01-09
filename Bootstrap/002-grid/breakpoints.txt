@@ -1,0 +1,12 @@
+3 breakpoints:
+* 768px
+* 992px
+* 1200px
+
+
+4 scopes and pre-defined css classes:
+* <768px (.col-xs-) extra small devices (Phones)
+* >=768px (.col-sm-) small devices (Tablets)
+* >=992px (.col-md-) medium devices (Desktop)
+* >=1200px (.col-lg-) large devices (Desktop)
+

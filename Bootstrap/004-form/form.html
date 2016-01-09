@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Latest compiled and minified CSS -->
+    <title>Test installation</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <!-- form-group add space between each groups -->
+            <div class="form-group">
+                <label for="inputtext">Input text</label>
+                <input type="text" class="form-control" id="inputtext">
+            </div>
+            <div class="form-group">
+                <label for="inputtext2">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <p class="help-block">example of help text.</p>
+            </div>
+        </form>
+        <hr>
+        <form action="" class="form-inline">
+            <!-- form-group add space between each groups -->
+            <!-- the text only shown in screen reader -->
+            <div class="form-group">
+                <label for="inputtext3" class="sr-only">Input text</label>
+                <input type="text" class="form-control input-lg" id="inputtext3" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="inputtext3" class="sr-only">Input text</label>
+                <input type="password" class="form-control" id="inputtext3" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox"> remember me</label>
+            </div>
+            <button type="submit" class='btn btn-default'>Sign in</button>
+        </form>
+        <hr>
+        <form action="">
+            <div class="form-group has-warning">
+                <label for="inputtext">Input text</label>
+                <input type="text" class="form-control" id="inputtext">
+            </div>
+            <div class="form-group has-error ">
+                <label for="inputtext2">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <p class="help-block">example of help text.</p>
+            </div>
+            <div class="form-group has-success">
+                <label for="inputtext2">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <p class="help-block">example of help text.</p>
+            </div>
+        </form>
+
+        <hr>
+        <h3>control-label</h3>
+        <form action="">
+            <div class="form-group has-warning">
+                <label for="inputtext" class="control-label">Input text</label>
+                <input type="text" class="form-control" id="inputtext">
+            </div>
+            <div class="form-group has-error ">
+                <label for="inputtext2" class="control-label">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <p class="help-block">example of help text.</p>
+            </div>
+            <div class="form-group has-success">
+                <label for="inputtext2" class="control-label">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <p class="help-block">example of help text.</p>
+            </div>
+        </form>
+        <h3>add icon (has-feedback)</h3>
+        <form action="">
+            <div class="form-group has-warning has-feedback">
+                <label for="inputtext" class="control-label">Input text</label>
+                <input type="text" class="form-control" id="inputtext">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+            <div class="form-group has-error  has-feedback">
+                <label for="inputtext2" class="control-label">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                <p class="help-block">example of help text.</p>
+            </div>
+            <div class="form-group has-success  has-feedback">
+                <label for="inputtext2" class="control-label">Input text</label>
+                <input type="text" class="form-control" id="inputtext2">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <p class="help-block">example of help text.</p>
+            </div>
+        </form>
+        <h3>grid</h3>
+        <form action="" class="">
+            <div class="form-group">
+                <div class="col-lg-2">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-lg-3">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- need load Jquery -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
