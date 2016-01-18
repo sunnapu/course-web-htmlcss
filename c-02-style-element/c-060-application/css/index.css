@@ -1,0 +1,32 @@
+body {
+    margin:0;
+}
+.stack {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+}
+@media only screen and (max-width: 1024px) {
+    .stack {
+        height: 600px;
+        background-size: 1200px;
+        background-attachment: scroll
+    }
+}
+@media only screen and (max-width: 800px) {
+    .stack {
+        height: 400px;
+        background-size: 800px;
+        background-attachment: scroll
+    }
+}
+@media only screen and (max-width: 640px) {
+    .stack {
+        height: 250px;
+        background-size: 500px;
+        background-attachment: scroll
+    }
+}
