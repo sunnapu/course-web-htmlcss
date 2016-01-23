@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        header {
+            font-family: 'Open Sans';
+        }
+        
+        #navbar {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px 20px;
+            position: relative;
+        }
+        
+        #navbar h4 {
+            display: inline-block;
+        }
+        
+        #navbar nav {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            font-size: 0.6em;
+            font-weight: 700;
+        }
+        
+        #navbar ul li {
+            display: inline-block;
+            padding-left: 20px;
+        }
+        
+        #banner {
+            text-align: center;
+            padding: 35px 0px;
+            color: white;
+            background-color: #50c19b;
+        }
+        
+        #banner img {
+            width: 150px;
+        }
+        
+        #banner h2 {
+            font-size: 2.3em;
+        }
+        
+        #banner .seperator {
+            margin: 0 auto;
+            width: 200px;
+            position: relative;
+            overflow: hidden;
+            padding: 11px; 
+        }
+        
+        #banner hr {
+            border: solid white 2px;
+            z-index: -1;
+            display: inline-block;
+            width: 68px;
+        }
+        
+        #banner div {
+            display: inline-block;
+            z-index: 999;
+        }
+        
+        #banner span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section id='navbar'>
+            <h4>START BOOTSTRAP</h4>
+            <nav>
+                <ul>
+                    <li>PORTFOLIO</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </section>
+        <section id="banner">
+            <img src="img/profile.png" alt="">
+            <h2>START BOOTSTRAP</h2>
+            <div class="seperator">
+                <hr>
+                <div><span class="fa fa-star"></span></div>
+                <hr>
+            </div>
+            <ul>Web Developer-Graphic Artist-User Experience Designer</ul>
+        </section>
+    </header>
+    <section id="portfolio"></section>
+    <section id="about"></section>
+    <section id="contact"></section>
+    <footer></footer>
+</body>
+
+</html>
