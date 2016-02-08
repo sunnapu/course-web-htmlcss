@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 
 <body>
@@ -11,44 +16,38 @@
     <hr>
     <h3>simple table</h3>
 
-    <table>
+    <table border="1">
         <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Phone</th>
+            <th width="50px"></th>
+            <th width="100px">Name</th>
+            <th width="100px">Phone</th>
         </tr>
         <tr>
-            <th>friend 1</th>
+            <th>1</th>
             <td>Jason</td>
             <td>519-111-1111</td>
         </tr>
         <tr>
-            <th>friend 2</th>
+            <th>2</th>
             <td>John</td>
             <td>226-111-1111</td>
         </tr>
     </table>
 
     <h3>Large Table</h3>
-    <table>
+    <table border="1">
         <caption>Table caption</caption>
         <colgroup>
             <col span="2" style="background-color:#88D100">
-                <col style="background-color:yellow">
+            <col style="background-color:yellow">
         </colgroup>
         <thead>
             <tr>
-                <th>Header content 1</th>
-                <th>Header content 2</th>
-                <th>Header content 3</th>
+                <th width="200px" height="30">Header content 1</th>
+                <th width="200px">Header content 2</th>
+                <th width="200px">Header content 3</th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <td colspan="2">Footer content 1 </td>
-                <td>Footer content 2</td>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td>Body content 1</td>
@@ -60,6 +59,11 @@
                 <td>Body content 3</td>
             </tr>
         </tbody>
+                <tfoot>
+            <tr>
+                <td colspan="3">Footer content</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 
