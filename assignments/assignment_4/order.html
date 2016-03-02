@@ -8,6 +8,36 @@
         img {
             width: 100px;
         }
+        
+        .row {
+            padding: 5px;
+        }
+        
+        .row label,
+        .row input {
+            display: inline-block;
+            height: 19px;
+        }
+        
+        .row label {
+            width: 60px;
+        }
+        
+        .row input {
+            width: 250px;
+        }
+        
+        .row .btn {
+            display: inline-block;
+            width: 200px;
+            margin-left: 30px;
+            height: 42px;
+            border: solid green 2px;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+        
     </style>
 </head>
 
@@ -21,62 +51,75 @@
             </select>
             <br>
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Please enter your full name">
-            <br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Please enter your email">
-            <br>
-            <label for="tel">Phone</label>
-            <input name="phone" type="tel" placeholder="Please enter your phone number">
-            <br>
-            <label for="food">City:</label>
-            <select name="food" id="food">
-                <option value="london">London</option>
-                <option value="waterloo">Waterloo</option>
-                <option value="toronto" selected>Toronto</option>
-                <option value="windsor">Windsor</option>
-            </select>
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your full name">
+            </div>
+            <div class="row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email">
+            </div>
+            <div class="row">
+                <label for="tel">Phone</label>
+                <input name="phone" type="tel" placeholder="Please enter your phone number">
+            </div>
+            <div class="row">
+                <label for="food">City:</label>
+                <select name="food" id="food">
+                    <option value="london">London</option>
+                    <option value="waterloo">Waterloo</option>
+                    <option value="toronto" selected>Toronto</option>
+                    <option value="windsor">Windsor</option>
+                </select>
+
+            </div>
         </fieldset>
         <br>
-        
+
         <fieldset>
             <legend>Order information</legend>
 
-            <input type="checkbox" name="food">
+            <input type="checkbox" name="food" value="pizza">
             <img src="pizza.jpg" alt="">
-            <input type="checkbox" name="food">
+            <input type="checkbox" name="food" value="burger">
             <img src="burger.jpg" alt="">
-            <input type="checkbox" name="food">
+            <input type="checkbox" name="food" value="hotdog">
             <img src="hotdog.jpg" alt="">
-            <input type="checkbox" name="food">
+            <input type="checkbox" name="food" value="soup">
             <img src="soup.jpg" alt="">
 
-            <br>
-            <Label>How many people (1- 4):</Label>
-            <input name="howmany" type="range" min="1" max="4" value="3">
-            <br>
-            <label for="date">Date:</label>
-            <input type="date" name="date">
-            <br>
-            <label for="time">Time:</label>
-            <input type="time" name="time">
-            <hr>
-            <br>
+            <div class="row">
+                <Label>People (1- 4):</Label>
+                <input name="howmany" type="range" min="1" max="4" value="3">
+            </div>
+
+            <div class="row">
+                <label for="date">Date:</label>
+                <input type="date" name="date">
+            </div>
+
+            <div class="row">
+                <label for="time">Time:</label>
+                <input type="time" name="time">
+            </div>
+
             <input type="radio" name="payment_type" checked>
             <label for="payment_type">Master card</label>
             <input type="radio" name="payment_type">
             <label for="payment_type">Visa card</label>
             <input type="radio" name="payment_type">
             <label for="payment_type">Paypal</label>
-
         </fieldset>
 
+        <div class="row">
+            <textarea name="comments" id="comments" cols="80" rows="10" placeholder="Please leave your comments"></textarea>
 
-        <textarea name="comments" id="comments" cols="80" rows="10" placeholder="Please leave your comments"></textarea>
-        <br>
-        <input type="submit">
-        <input type="reset">
+        </div>
+
+        <div class="row">
+            <input class="btn" type="submit">
+            <input class="btn" type="reset">
+        </div>
     </form>
 
 </body>
