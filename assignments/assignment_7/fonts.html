@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1:first-letter {
+           font-family: monospace;
+           color: tomato;
+           text-shadow: 2px 3px 0px grey;
+           font-size: 3em;
+        }
+        
+        .reference {
+            font-style: italic;
+            letter-spacing: 1px;
+            text-decoration: underline;
+            text-align: right;
+        }
+        
+        .firstword {
+            text-transform: uppercase;
+            color: teal;
+        } 
+        
+        .content {
+            font-family:sans-serif;
+            line-height: 1.5em;
+        }
+        
+        .content::first-line {
+            font-weight: bold;
+        }
+        
+        .content {
+            text-indent: 33px;
+        }
+    </style>
+    <!--    font-family, font-size(px, %, em), text-shadow, text-transform, letter-spacing, word-spacing, line-height, color, font-weight, font-style, text-align(left, justify, right), text-indent, text-decoration, :first-line, :first-letter, vertical-align(text-top, baseline, text-bottom) -->
+</head>
+<body>
+    <h1>Javascript</h1>
+    
+    <p class='content'><span class="firstword">Javascript</span> is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production;</p>
+    
+    <p class='reference'>From Wikipedia, the free encyclopedia</p>
+    
+</body>
+</html>

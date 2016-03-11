@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>font</title>
+    <style>
+        .tags-explain {
+            border-left: solid tomato 4px;
+            border-bottom: solid tomato 1px;
+            padding-left: 10px;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+        
+        .font-family {
+            font-family: cursive;
+        }
+        
+        .font-size {
+            font-size: 200%;
+        }
+        
+        .text-shadow {
+            text-shadow: 3px 3px 3px grey;
+            color: tomato;
+            font-size: 2em;
+        }
+        
+        .text-transform {
+            text-transform: uppercase;
+        }
+        
+        .letter-spacing {
+            letter-spacing: 5px;
+        }
+        
+        .word-spacing {
+            word-spacing: 80px;
+        }
+        
+        .line-height {
+            border: solid 2px;
+            line-height: 35px;
+        }
+        
+        .font-weight {
+            font-weight: bold;
+        }
+        
+        .font-style {
+            font-style: italic;
+        }
+        
+        .text-align {
+            /* except the last line, every line has same length by adding spacing between words */
+            text-align: justify;
+        }
+        
+        .text-indent {
+            text-indent: -100px;
+        }
+        
+        .text-decoration {
+            text-decoration: overline;
+            text-decoration: underline;
+        }
+        
+        .first-line:first-line {
+            color: red;
+        }
+        
+        .first-letter:first-letter {
+            font-size: 200%;
+        }
+        
+        .first-word::first-word {
+            font-size: 200%;
+        }
+        
+        .vertical-align img {
+            vertical-align: text-top;
+            /*            vertical-align: text-bottom;*/
+            /*            vertical-align: baseline;*/
+        }
+        
+        .vertical-align {
+            font-size: 200%;
+            border: solid 2px;
+        }
+    </style>
 </head>
+
 <body>
-<!--    font-family, font-size(px, %, em), text-shadow, text-transform, letter-spacing, word-spacing, line-height, color, font-weight, font-style, text-align(left, justify, right), text-indent, text-decoration, :first-line, :first-letter, vertical-align(text-top, baseline, text-bottom) -->
+    <!--    font-family, font-size(px, %, em), text-shadow, text-transform, letter-spacing, word-spacing, line-height, color, font-weight, font-style, text-align(left, justify, right), text-indent, text-decoration, :first-line, :first-letter, vertical-align(text-top, baseline, text-bottom) -->
+    <div class="tags-explain">font-family</div>
+    <div class="font-family">Teens Programming</div>
+
+    <div class="tags-explain">font-size(px, %, em)</div>
+    <div class="font-size">Teens Programming</div>
+
+    <div class="tags-explain">text-shadow</div>
+    <div class="text-shadow">Teens Programming</div>
+
+    <div class="tags-explain">text-transform</div>
+    <div class="text-transform">Teens Programming</div>
+
+    <div class="tags-explain">letter-spacing</div>
+    <div class="letter-spacing">Teens Programming</div>
+
+    <div class="tags-explain">word-spacing</div>
+    <div class="word-spacing">Teens Programming</div>
+
+    <div class="tags-explain">line-height</div>
+    <div class="line-height">Teens Programming</div>
+
+    <div class="tags-explain">font-weight</div>
+    <div class="font-weight">Teens Programming</div>
+
+    <div class="tags-explain">font-style</div>
+    <div class="font-style">Teens Programming</div>
+
+    <div class="tags-explain">text-align(left, justify, right)</div>
+    <div class="text-align">Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming</div>
+
+    <div class="tags-explain">text-indent</div>
+    <div class="text-indent">Teens Programming</div>
+
+    <div class="tags-explain">text-decoration</div>
+    <div class="text-decoration">Teens Programming</div>
+
+    <div class="tags-explain">:first-line</div>
+    <div class="first-line">Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming, Teens Programming</div>
+
+    <div class="tags-explain">:first-letter</div>
+    <div class="first-letter">Teens Programming</div>
+
+    <div class="tags-explain">:first-word</div>
+    <div class="first-word">Teens Programming</div>
+
+    <div class="tags-explain">vertical-align(text-top, baseline, text-bottom)</div>
+    <div class="vertical-align"><img src="../images/computer.jpg"><span>Teens programming</span></div>
 </body>
+
 </html>

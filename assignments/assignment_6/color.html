@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color</title>
+    <style>
+        th,
+        td {
+            width: 180px;
+            height: 30px;
+            font-weight: bold;
+        }
+        
+        .black .hex-color {
+            background-color: #000000;
+        }
+        
+        .black .rgb-color {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .black .name {
+            background-color: black;
+        }
+        
+        .black .hsl-color {
+            background-color: hsl(0, 0%, 0%);
+            color: white;
+        }
+        
+        .white>td {
+            border: solid black 1px;
+        }
+        .white .hex-color {
+            background-color: #FFFFFF;
+        }
+        
+        .white .rgb-color {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .white .name {
+            background-color: white;
+        }
+        
+        .white .hsl-color {
+            background-color: hsl(360, 100%, 100%);
+        }
+        
+        .red .hex-color {
+            background-color: #FF0000;
+        }
+        
+        .red .rgb-color {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        .red .name {
+            background-color: red;
+        }
+        
+        .red .hsl-color {
+            background-color: hsl(0, 100%, 50%);
+        }
+        
+        .green .hex-color {
+            background-color: #00FF00;
+        }
+        
+        .green .rgb-color {
+            background-color: rgb(0, 255, 0);
+        }
+        
+        .green .name {
+            background-color: lime;
+        }
+        
+        .green .hsl-color {
+            background-color: hsl(120, 100%, 50%);
+        }
+        
+        .blue .hex-color {
+            background-color: #0000FF;
+        }
+        
+        .blue .rgb-color {
+            background-color: rgb(0, 0, 255);
+        }
+        
+        .blue .name {
+            background-color: blue;
+        }
+        
+        .blue .hsl-color {
+            background-color: hsl(240, 100%, 50%);
+        }
+        
+        .yellow .hex-color {
+            background-color: #FFFF00;
+        }
+        
+        .yellow .rgb-color {
+            background-color: rgb(255, 255, 0);
+        }
+        
+        .yellow .name {
+            background-color: yellow;
+        }
+        
+        .yellow .hsl-color {
+            background-color: hsl(60, 100%, 50%);
+        }
+        
+        .yellow .hex-color {
+            background-color: #FFFF00;
+        }
+        
+        .yellow .rgb-color {
+            background-color: rgb(255, 255, 0);
+        }
+        
+        .yellow .name {
+            background-color: yellow;
+        }
+        
+        .yellow .hsl-color {
+            background-color: hsl(60, 100%, 50%);
+        }
+        
+        .aqua .hex-color {
+            background-color: #00FFFF;
+        }
+        
+        .aqua .rgb-color {
+            background-color: rgb(0, 255, 255);
+        }
+        
+        .aqua .name {
+            background-color: aqua;
+        }
+        
+        .aqua .hsl-color {
+            background-color: hsl(180, 100%, 50%);
+        }
+        
+        .magenta .hex-color {
+            background-color: #FF00FF;
+        }
+        
+        .magenta .rgb-color {
+            background-color: rgb(255, 0, 255);
+        }
+        
+        .magenta .name {
+            background-color: magenta;
+        }
+        
+        .magenta .hsl-color {
+            background-color: hsl(300, 100%, 50%);
+        }
+        
+        span {
+            display: inline-block;
+            background-color: rgb(255,0,0);
+            width: 100px;
+            height: 100px;
+        }
+        
+        span.opacity_half {
+            background-color: rgba(255,0,0,0.5);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--    table>(tr>(td.hex-color+td.rgb-color+td.name+td.hsl-color+td))*10-->
+    <table>
+        <tr>
+            <td>HEX</td>
+            <td>RGB</td>
+            <td>NAME</td>
+            <td>HSL</td>
+        </tr>
+        <tr class="black">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name"></td>
+            <td class="hsl-color">hsl(0, 0%, 0%)</td>
+        </tr>
+        <tr class="white">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name"></td>
+            <td class="hsl-color">hsl(360, 100%, 100%)</td>
+        </tr>
+        <tr class="red">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name"></td>
+            <td class="hsl-color">hsl(0, 100%, 50%)</td>
+        </tr>
+        <tr class="green">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name">Lime</td>
+            <td class="hsl-color">hsl(120, 100%, 50%)</td>
+        </tr>
+        <tr class="blue">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name"></td>
+            <td class="hsl-color">hsl(240, 100%, 50%)</td>
+        </tr>
+        <tr class="yellow">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name"></td>
+            <td class="hsl-color">hsl(60, 100%, 50%)</td>
+        </tr>
+        <tr class="aqua">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name">Aqua</td>
+            <td class="hsl-color">hsl(180, 100%, 50%)</td>
+        </tr>
+        <tr class="magenta">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name">Magenta</td>
+            <td class="hsl-color">hsl(300, 100%, 50%)</td>
+        </tr>
+        <tr class="grey">
+            <td class="hex-color"></td>
+            <td class="rgb-color"></td>
+            <td class="name"></td>
+            <td class="hsl-color"></td>
+        </tr>
+
+    </table>
+
+    <h2>Alpha channel or Opacity or Transparency</h2>
+    <h3>Use rgba(255,0,0,0.5) function</h3>
+    <span></span>
+    <span class="opacity_half"></span>
+</body>
+
+</html>
