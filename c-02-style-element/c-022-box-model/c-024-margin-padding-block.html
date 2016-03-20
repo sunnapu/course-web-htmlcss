@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Margin, padding for block element</title>
+    <style>
+        div,
+        p {
+            font-size: 2em;
+            color: steelblue;
+        }
+        
+        div {
+            border: solid tomato 4px;
+            /* margin  */
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            /* padding */
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        p {
+            border: solid lightgreen 4px;
+        }
+        
+        .withwidth {
+            width: 50%;
+            /* margin-right has no effect */
+            margin-right: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Block element</div>
+    <p>Another block element </p>
+
+    <div class="withwidth">Block element with width </div>
+</body>
+
+</html>
