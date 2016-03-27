@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Border</title>
+    <style>
+        .outer-container {
+            position: relative;
+        }
+        div.inner-container {
+            width: 26em;
+            height: 26em;
+            border: solid tomato 4px;
+            
+            border-top-left-radius: 3em;
+            border-top-right-radius: 10em;
+            border-bottom-right-radius: 5em;
+            border-bottom-left-radius: 6em 3em;
+        }
+        
+        .circle {
+            border: solid 4px; 
+            position: absolute;
+        }
+        
+        div.one {
+            width: 6em;
+            height: 6em;
+            border-radius: 3em;
+            top: 0px;
+            left: 0px;
+        }
+
+        div.two {
+            width: 20em;
+            height: 20em;
+            border-radius: 10em;
+            top: 0px;
+            left: 96px;
+        }
+        
+        div.three {
+            width: 12em;
+            height: 6em;
+            
+            top: 320px;
+            left: 0;
+            
+            border-radius: 0 0 0  6em/3em; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="circle one"></div>
+            <div class="circle two"></div>
+            <div class="circle three"></div>
+        </div>
+    </div>
+</body>
+
+</html>
