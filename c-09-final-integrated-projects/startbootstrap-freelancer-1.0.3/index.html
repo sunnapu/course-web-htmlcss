@@ -57,28 +57,97 @@
             font-size: 2.3em;
         }
         
-        #banner .seperator {
+        .seperator {
             margin: 0 auto;
             width: 200px;
             position: relative;
             overflow: hidden;
-            padding: 11px; 
+            padding: 11px;
         }
         
-        #banner hr {
+        .seperator hr {
             border: solid white 2px;
             z-index: -1;
             display: inline-block;
             width: 68px;
         }
         
-        #banner div {
+        .seperator div {
             display: inline-block;
             z-index: 999;
         }
         
-        #banner span {
+        .seperator span {
             font-size: 20px;
+        }
+        
+        #portfolio img {
+            width: 182px;
+            margin: 8px;
+        }
+        /*
+        
+                <h2>START BOOTSTRAP</h2>
+        <div class="seperator">
+            <hr>
+            <div><span class="fa fa-star"></span></div>
+            <hr>
+        </div>
+*/
+        
+        #portfolio {
+            text-align: center;
+            color: #2C3E50;
+            padding: 80px 0px;
+        }
+        
+        #portfolio .seperator hr {
+            border: solid 2px;
+            display: inline-block;
+        }
+        
+        #contact {
+            text-align: center;
+        }
+        
+        #contact input {
+            width: 90%;
+            height: 50px;
+            border-top: solid lightgrey 1px;
+            border-left: none;
+            border-right: none;
+            padding-left: 5px;
+            font-size: 0.8em;
+            color: #9daad0;
+        }
+        
+        textarea {
+            width: 90%;
+            padding-left: 5px;
+            font-size: 0.8em;
+            border-left: none;
+            border-right: none;
+            border-color: lightgrey;
+            padding-top: 10px;
+        }
+        
+        #contact {
+            padding: 80px 0px;    
+        }
+        
+        #contact ::input-placeholder {
+            color: #cb3468;
+        }
+        
+        .btn {
+            text-decoration: none;
+            background-color: #19BC9B;
+            color:white;
+            display: inline-block;
+            width: 67px;
+            height: 40px;
+            border-radius: 5px;
+            line-height: 40px;
         }
     </style>
 </head>
@@ -106,9 +175,49 @@
             <ul>Web Developer-Graphic Artist-User Experience Designer</ul>
         </section>
     </header>
-    <section id="portfolio"></section>
-    <section id="about"></section>
-    <section id="contact"></section>
+    <section id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="seperator">
+            <hr>
+            <div><span class="fa fa-star"></span></div>
+            <hr>
+        </div>
+
+        <img src="./img/portfolio/cabin.png" alt="">
+        <img src="./img/portfolio/cake.png" alt="">
+        <img src="./img/portfolio/circus.png" alt="">
+        <img src="./img/portfolio/game.png" alt="">
+        <img src="./img/portfolio/safe.png" alt="">
+        <img src="./img/portfolio/submarine.png" alt="">
+    </section>
+    <section id="about">
+        <!--
+        <h2>PORTFOLIO</h2>
+        <div class="seperator">
+            <hr>
+            <div><span class="fa fa-star"></span></div>
+            <hr>
+        </div>
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and Javascript as well as optional LESS stylesheets for easy customization.</p>
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and Javascript as well as optional LESS stylesheets for easy customization.</p>
+        <a href=""><span class="fa fa-star"></span>Download Theme</a>
+-->
+    </section>
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <div class="seperator">
+            <hr>
+            <div><span class="fa fa-star"></span></div>
+            <hr>
+        </div>
+
+        <input type="text" placeholder="Name">
+        <input type="text" Placeholder="Email Address">
+
+        <input type="text" placeholder="Phone Number">
+        <textarea cols="99" rows="10" placeholder="Message"></textarea>
+        <div><a class="btn" href="">Send</a></div>
+    </section>
     <footer></footer>
 </body>
 
