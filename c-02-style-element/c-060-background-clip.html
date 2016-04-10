@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border and background-clip</title>
+    
+    <style>
+        div {
+            background: lime;
+            
+            height: 200px;
+            border-style: dotted;
+            border-width: 10px;
+            border-color: blueviolet;
+            
+            font-size: 2em;
+            text-align: center;
+            line-height: 200px;
+            
+            padding: 50px;
+        } 
+        
+        /* background-clip */
+        div {
+            background-clip: padding-box;
+/*            background-clip: content-box;*/
+        }
+    </style> 
+</head>
+<body>
+   <div>
+       Teens Programming is a computer programming school.
+   </div> 
+</body>
+</html>
