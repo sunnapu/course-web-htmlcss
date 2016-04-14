@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="c-036-flex-concept-base.css">
+    <style>
 .container {
     height: 400px;
     display: flex;
@@ -19,10 +26,24 @@
     /* possible values: none, flex-grow flex-shrink flex-basis */
     /* value 'none' means 0 0 auto */
     /* flex: 2 auto; means flex-grow:2, flex-shrink:1, flex-basis: auto */
-    /* flex: 2 2; means flex-basis:0%; */
-    /* flex: 2; means flex-thrink:1, flex-basis is 0%; */
+    /* flex: 2 2; means flex-basis:0; */
+    /* flex: 2; means flex-thrink:1, flex-basis is 0; */
 }
 
 .i2, .i3, .i4, .i5, .i6 {
     flex: 1 1 300px;
 }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="c-036-flex-concept-base.css">
+    <style>
+.container {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: space-around;
+}
+
+        .item {
+            flex-basis:auto;
+        }
+        
+        .i1, .i2, .i3 {
+            width: 25%;
+        }
+        
+        .i4, .i5, .i6 {
+            width: 30%;
+        }
+.i1 {
+    order: 2;
+    align-self: center;
+    /* same as align-items, but for individual item */
+}
+
+.i2 {
+    order: 1;
+}
+
+.i3 {
+    order: 3;
+}
+
+.i4 {
+    order: 4;
+}
+
+.i5 {
+    order: 5;
+}
+
+.i6 {
+    order: 6;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+    </div>
+</body>
+</html>
