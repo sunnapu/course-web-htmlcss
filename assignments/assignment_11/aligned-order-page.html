@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order form</title>
+    <style>
+        fieldset {
+            width: 500px;
+        }
+        
+        .row {
+            padding: 5px;
+        }
+        
+        .row label,
+        .row input {
+            display: inline-block;
+            height: 29px;
+        }
+        
+        .row select {
+            -webkit-appearance: menulist-button;
+            width: 256px;
+            height: 30px;
+        }
+        
+        .first-col {
+            width: 120px;
+        }
+        
+        .row input {
+            width: 250px;
+        }
+        
+        .payment-type input[type=radio] {
+            width: 19px;
+            height: 30px;
+            vertical-align: middle;
+        } 
+        
+        .option {
+            padding-right: 10px;
+        } 
+        .row .btn {
+            display: inline-block;
+            width: 143px;
+            height: 42px;
+            background-color: #506de6;
+            border-radius: 10px;
+            font-size: 1.2em;
+            color: white;
+            margin-left: 380px; 
+        }
+        
+        #comments {
+            width: 518px; 
+            height: 150px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Payment information</legend>
+
+            <div class="row">
+                <label for="name" class="first-col">Name</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your full name">
+            </div>
+            <div class="row">
+                <label for="email" class="first-col">Email</label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email">
+            </div>
+            <div class="row">
+                <label for="tel" class="first-col">Phone</label>
+                <input name="phone" type="tel" placeholder="Please enter your phone number">
+            </div>
+            <div class="row">
+                <label for="food" class="first-col">City:</label>
+                <select name="food" id="food">
+                    <option value="london">London</option>
+                    <option value="waterloo">Waterloo</option>
+                    <option value="toronto" selected>Toronto</option>
+                    <option value="windsor">Windsor</option>
+                </select>
+
+            </div>
+            <div class="row payment-type">
+                <label class="first-col">Payment options:</label>
+                <input type="radio" name="payment_type" id="mastercard" checked>
+                <label class="option" for="mastercard">Master card</label>
+                <input type="radio" name="payment_type" id="visacard">
+                <label class="option" for="visacard">Visa card</label>
+                <input type="radio" name="payment_type" id="paypal">
+                <label class="option" for="paypal" >Paypal</label>
+            </div>
+        </fieldset>
+
+        <div class="row">
+            <textarea name="comments" id="comments" placeholder="Please leave your comments"></textarea>
+        </div>
+
+        <div class="row">
+            <input class="btn" type="submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
