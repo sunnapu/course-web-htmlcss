@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin:0;
+        }
+        .container {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        .item {
+            background: tomato;
+            font-weight: bold;
+            font-size: 32px;
+            text-align: center;
+            color: yellow;
+        }
+        
+        .item1 {
+            flex: 1 1 200px;
+        }
+        
+        .item2 {
+            flex: 2 2 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1" style="background-color:red">1</div>
+        <div class="item item2" style="background-color:green">2</div>
+    </div>
+    <ul>
+        <li>when screen 200+200=400px, they both 200px</li>
+        <li>when screen 430px, item1 about 210px (grow 10px), item2 about 220px (grow 20px), because the flex-grow</li>
+        <li>when screen 370px, item1 about 190px (shrink 10px), item2 about 180px (shrink 20px)</li>
+    </ul>
+
+</body>
+
+</html>
