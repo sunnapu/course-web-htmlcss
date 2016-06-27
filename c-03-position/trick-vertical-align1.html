@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vertical align</title>
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			display: inline-block;
+			width: 47%;
+		}
+		
+		#left {
+			background-color: aqua;
+			font-size: 6em;
+		}
+		
+		#right {
+			background-color: greenyellow;
+			font-size: 3em;
+			vertical-align: text-bottom;
+		}
+	</style>
+</head>
+<body>
+	<div id="left">Left</div>
+	<div id="right">Right</div>
+	<div id="container">
+		<div id="item"></div>
+	</div>
+</body>
+</html>
