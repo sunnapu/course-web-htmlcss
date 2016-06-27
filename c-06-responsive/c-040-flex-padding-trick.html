@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header {
+            flex-basis: 100%;
+            background: red;
+        }
+        nav, aside, article {
+            flex-grow: 1;
+            flex-basis: 0%;
+            padding: 1px;
+        }
+        nav {
+            background-color: aqua;
+        }
+        
+        aside {
+            background-color: blueviolet;
+        }
+        
+        article {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+        <article>Article</article>
+    </div>
+
+</body>
+
+</html>
