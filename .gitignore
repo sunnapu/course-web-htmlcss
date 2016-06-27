@@ -1,6 +1,7 @@
 .DS_Store
 *.swp
 bower_components/
+node_modules/
 
 # courses not saved in git for now
 templates/
