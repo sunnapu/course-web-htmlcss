@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Latest compiled and minified CSS -->
+    <title>Buttons</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+
+    <style>
+        .nav-tabs {
+            border-bottom: 2px solid #DDD;
+        }
+        
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:focus,
+        .nav-tabs > li.active > a:hover {
+            border-width: 0;
+        }
+        
+        .nav-tabs > li > a {
+            border: none;
+            color: #666;
+            font-size: 20px;
+        }
+        
+        .nav-tabs > li.active > a,
+        .nav-tabs > li > a:hover {
+            border: none;
+            color: #4285F4 !important;
+            background: transparent;
+        }
+        
+        .nav-tabs > li > a::after {
+            content: "";
+            background: #4285F4;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: -1px;
+            transition: all 250ms ease 0s;
+            transform: scale(0);
+        }
+        
+        .nav-tabs > li.active > a::after,
+        .nav-tabs > li:hover > a::after {
+            transform: scale(1);
+        }
+        
+        .tab-nav > li > a::after {
+            background: #21527d none repeat scroll 0% 0%;
+            color: #fff;
+        }
+        
+        .tab-pane {
+            padding: 15px 0;
+        }
+        
+        .tab-content {
+            padding: 20px
+        }
+        
+        .general {
+            padding: 20px;
+            border: solid #a646e2 2px;
+        }
+        
+        .card {
+            background: #FFF none repeat scroll 0% 0%;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        
+        body {
+            background: #EDECEC;
+            padding: 50px
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Nav tabs -->
+                <div class="card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#competition" aria-controls="competition" role="tab" data-toggle="tab">Competition</a></li>
+                        <li role="presentation"><a href="#earn_college_credit" aria-controls="earn_college_credit" role="tab" data-toggle="tab">Earn College Credit</a></li>
+                        <li role="presentation"><a href="#web" aria-controls="web" role="tab" data-toggle="tab">Web development</a></li>
+                        <li role="presentation"><a href="#certificate" aria-controls="certificate" role="tab" data-toggle="tab">Certificate</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="competition">
+                            <h3>1. Prepare Canadian Computing Competition – Junior level</h3>
+
+<p>For grade 6-12 students, students don’t need programming experience.</p>
+
+<p>This course aims to prepare for the annual competition organized by the Waterloo University. The top 20 Senior Level contestants will be invited to participate in the Canadian Computing Olympiad (CCO) competition. The results of both competitions are used to determine Canadian Team members to participate in the International Olympiad of Informatics (IOI). </p>
+
+<p>The next competition date is Feb 22, 2017.</p>
+
+                            <h4>【Dates and Fees】 </h4>
+                            <pre>
+Date: from Sep 4, 2016 to Feb 19, 2017 (23 sessions, on Sunday)
+Time: 12:30pm-2:30pm (2 hours)
+Each session: $30
+</pre>
+                            <h3>2. Prepare Canadian Computing Competition – Intermediate level</h3>
+
+<p>For grade 6-12 students, students need finish junior level course.</p>
+
+                            <p>This course aims to prepare for the annual competition organized by the Waterloo University.</p>
+
+<p>The next competition date is Feb 22, 2017.</p>
+                            <h4>【Dates and Fees】 </h4>
+                            <pre>
+Date: from Sep 4, 2016 to Feb 19, 2017 (23 sessions, on Sunday)
+Time: 10:00am - 12:00pm (2 hours)
+Each session: $30
+</pre>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="earn_college_credit">
+                        <h3>Prep AP Computer Science A（Part 1）</h3>
+
+                            <p>For grade 9-12 students, Students don’t need programming experience.</p>
+
+<p>This course is for the programming language part of AP Computer Science. The 2nd part is for data structure and algorithm. </p>
+
+<p>If the students pass the exam, the universities such as Waterloo University and Western University will recognize the credits. This course can significantly save students’ time and costs in universities, also increase students’ confidence of their computer programming study in future.</p>
+
+                            <h4>【Dates and Fees】 </h4>
+                            <pre>
+Date: Sep 3, 2016 – Oct 29, 2016 (9 sessions, on Saturday)
+Time: 10:00am-12:00pm (2 hours)
+Each session: $30
+</pre>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="web">
+                            <h3>1.Jump start modern web development (10 hours)</h3>
+
+<p>For grade 4-12 students. Students don’t need programming experience.</p>
+
+<p>This course aims to inspire students’ interest at web site development and computer programming. </p>
+
+<p>We will implement a real web page together and publish to the world. Students learn development tools, environment and 2 web languages. </p>
+
+                            <h4>【Dates and Fees】</h4>
+                            <pre>
+Date: Sep 3, Sep 10, Sep 17, Sep 24, Oct 01 (5 sessions, on Saturday)
+Time: 10:00am-12:00pm (2 hours)
+Each session: $30
+</pre>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="certificate">
+                            <h3>
+Java Certified Programmer exam PREP (30 hours)</h3>
+
+                            <p>
+                                We will learn Object-Oriented Concepts, Access Control, Declarations, Initialization, Assignments and operators, Common APIs (I/O, Formatting, Parsing, Date, String), Flow Control, Exceptions and Assertions, Collections, Generics, Inner classes, Concurrency, Threads, Development, Git source code management and Java development environment and tools.
+                            </p>
+                            <p>The certificate exam is offered by <a href="http://education.oracle.com/">Oracle</a></p>
+
+                        </div>
+                    </div>
+                   <div class="general">
+                       <h3>Private lessons also available:</h3>
+                       <ul>
+                           <li>1 to 1: $30/hour</li>
+                           <li>1 to 2: $20/hour</li>
+                       </ul>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- need load Jquery -->
+    <script src="../jquery/dist/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>google</title>
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		nav {
+			position: relative;
+			height: 40px;
+			line-height: 40px;
+		}
+		ul {
+			list-style: none;
+			position: absolute;
+			right: 20px;
+		}
+		li {
+			display: inline-block;
+			padding-left: 12px;
+		}
+		#main {
+			text-align: center;
+			margin-top: 100px;
+		}
+		
+		#apps {
+			background-image:url('//ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+			text-indent: 9999px;
+/*			border: solid red;*/
+			
+			display: inline-block;
+			height: 40px;
+			width: 32px;
+/*			background-position: -275px -87px; */
+			background-position: -155px -38px;
+			background-repeat: no-repeat;
+			background-size: 600px;
+			
+		}
+		
+
+		#notification {
+			background-image:url('//ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+			text-indent: 9999px;
+/*			border: solid red;*/
+			
+			display: inline-block;
+			height: 33px;
+			width: 32px;
+/*			background-position: -275px -87px; */
+/*			background-position: -155px -38px;*/
+			background-position:-439px 0px;
+			background-repeat: no-repeat;
+			background-size: 591px;
+			background-color: rgba(0,0,0,0.8);
+			
+		}
+		
+		#account {
+			background-image:url(//lh3.googleusercontent.com/-zNCgAvOysss/AAAAAAAAAAI/AAAAAAAAAAA/AOtt-yF0kxnpOWmkNhBIM1T7sVcaCUQ6MQ/s64-c-mo/photo.jpg);
+			height: 40px;
+			width: 40px;
+			display: inline-block;
+			background-size: 39px;
+			text-indent: 9999px;
+			border-radius: 40px;
+		}
+		
+		#logo {
+			background-image: url(https://www.google.ca/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png);
+			background-repeat: no-repeat;
+			background-size:100%; 
+			width: 400px;
+			height: 200px;
+			margin: 0 auto;
+		}
+		
+		#search {
+			border: solid grey 1px;
+			height: 50px;
+			width: 657px;
+			margin: 0 auto;
+		}
+		
+		#voice {
+			vertical-align: bottom;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC);
+			background-repeat: no-repeat;
+			background-size: 32px;
+		}
+		input {
+			width: 600px;
+			height: 41px;
+			border: none;
+		}
+		
+		.btn {
+			margin-top: 40px;
+			display: inline-block;
+			background-color: grey;
+			width: 150px;
+			height: 40px;
+			line-height: 40px;
+			text-decoration: none;
+			color: black;
+			margin-bottom: 40px;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="">Gmail</a>
+			</li>
+			<li><a href="">Images</a>
+			</li>
+			<li><a href="" id="apps">Apps</a>
+			</li>
+			<li><a href="" id="notification">Notifications</a>
+			</li>
+			<li><a href="" id="account">Account</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="main">
+		<div id="logo"></div>
+		<div id="search">
+			<input type="text">
+			<span id="voice"></span>
+		</div>
+		<a href="" class="btn">Google Search</a>
+		<a href="" class="btn">I'm Feeling Lucky</a>
+		<div>Google.ca offered in:<a href="">Français</a>
+		</div>
+	</div>
+</body>
+
+</html>
