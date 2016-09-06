@@ -21,15 +21,12 @@ section {
 
 /* code to focus on */
 
-/* flex-shrink default is 1 */
-/* flex-basis default value:
-/* if flex is not set, flex-basis is auto, that means it is relative flex */
-/* if flex is set, but it lacks of flex-basis value such as flex: 1 or flex: 1 1, then flex-basis is 0, that means it is absolute flex */
-
 nav {
-    flex: none;
+    flex: 1;
+	/* 1 1 0 */
 }
 
 .content {
     flex: 4;
+	/* 4 1 0 */
 }

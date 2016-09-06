@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<style>
+		.container {
+			display: flex;
+			height: 300px;
+		}
+		.item {
+			border: solid 2px tomato;
+		}
+		.container.wrap {
+			flex-wrap: wrap;
+		}
+		.short1,
+		.long {
+			flex-grow: 1;
+		}
+		.short2 {
+			flex-grow: 2;
+		}
+		.basis0 {
+			flex-basis: 0;
+		}
+		.basisauto {
+			flex-basis: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>absolute flex (flex-basis:0, it will not wrap)</h3>
+	<div class="container wrap">
+		<div class='item basis0 short1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur doloremque iste, eligendi quo quasi iure quis quod dolor tempore maiores aperiam mollitia ratione harum temporibus provident nesciunt similique est!</div>
+		<div class='item basis0 long'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatum officiis cupiditate iusto minus. Repudiandae magnam ipsum odit, commodi earum iusto perferendis repellendus vero illum provident corporis, doloremque, impedit dolore!</div>
+		<div class='item basis0 short2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, tempora, quod! Odit, temporibus, magni? Soluta doloribus, atque neque quod quisquam repellat, sed amet ex excepturi. Inventore cupiditate eveniet aut commodi!</div>
+	</div>
+	<br>
+	<h3>relative flex (flex-basis:auto, it will wrap)</h3>
+	<div class="container wrap">
+		<div class='item basisauto short1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur doloremque iste, eligendi quo quasi iure quis quod dolor tempore maiores aperiam mollitia </div>
+		<div class='item basisauto long'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatum officiis cupiditate iusto minus. Repudiandae magnam ipsum odit, commodi earum iusto perferendis!</div>
+		<div class='item basisauto short2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, tempora, quod! Odit, temporibus, magni? Soluta doloribus, atque neque quod quisquam repellat, sed</div>
+	</div>
+</body>
+
+</html>

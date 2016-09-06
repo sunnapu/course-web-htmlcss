@@ -9,27 +9,61 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* nowrap, wrap, wrap-reverse */
+    /*    flex-flow: row wrap;*/
+    /* flex-flow == flex-direction + flex-wrap */
 }
 
 .item {
-    flex-basis: 100%;
+    flex-basis: 150px;
+    /* 'auto' is default */
+    /* value: auto, <'width'>, percentage */
+    /* specifies the initial main size of a flex item */
 }
 
-.i1 {
-    flex-basis: auto;
-    flex-grow: 1;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item i2">2</div>
+        <div class="item i3">3</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item i6">6</div>
+    </div>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="c-036-flex-concept-base.css">
+    <style>
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* nowrap, wrap, wrap-reverse */
+    /*    flex-flow: row wrap;*/
+    /* flex-flow == flex-direction + flex-wrap */
 }
 
-.i2 {
-    flex-basis: auto;
-    flex-grow: 2;
+.item {
+    flex-basis: 150px;
+    /* 'auto' is default */
+    /* value: auto, <'width'>, percentage */
+    /* specifies the initial main size of a flex item */
+
+    /* flex-basis is the same as width, but
+    the 'auto' and '0' values mean different thing */
+    /* flex-basis:auto; means the width of content, if the width of content is less than the container width, the flex-grow will be used to determine the width.
+       width:auto; means the default behavior, for example, block will take 100% width of its container.
+       flex-basis:0; means absolute flex, the width will be determined by flex-grow and the container width.
+       width:0; means the width is 0
+    */
 }
 
-.i3 {
-    flex-basis: auto;
-    flex-grow: 3;
-}
-        
     </style>
 </head>
 <body>
