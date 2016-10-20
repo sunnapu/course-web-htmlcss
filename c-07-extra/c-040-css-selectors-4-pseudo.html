@@ -9,11 +9,37 @@
             color: white;
             background-color: black;
         }
+        
+        li:first-child {
+            text-transform: uppercase;
+        }
+        
+        li:nth-child(2) {
+            border: double;
+        }
+        
+        ul:before {
+            content: 'This is a list';
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <p>Pseudo-class selectors: the elements are not part of the html document such as :hover, :first-child etc</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+
 </body>
 
 </html>
