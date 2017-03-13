@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>recreate</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: sans-serif;
+		}
+		header {
+			background-image: url(img/header.jpg);
+			color: white;
+			background-size: cover;
+		}
+		#navbar {
+			height: 40px;
+			color: white;
+			padding: 10px;
+		}
+		#logo {
+			font-weight: 600;
+			color: rgba(255, 255, 255, 0.8);
+		}
+		ul {
+			list-style: none;
+		}
+		ul li a {
+			text-decoration: none;
+			color: rgba(255, 255, 255, 0.8);
+			font-size: 0.8em;
+		}
+		ul {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		ul li {
+			display: inline-block;
+			padding-left: 10px;
+		}
+		/* banner */
+		#banner {
+			height: 500px;
+			text-align: center;
+			padding: 80px;
+		}
+		#banner .title {
+			font-size: 41px;
+			text-transform: uppercase;
+			font-weight: 600;
+			width: 89%;
+			margin: 0 auto;
+		}
+		hr {
+			width: 40px;
+			margin: 20px auto;
+			border-color: tomato;
+		}
+		.subtitle {
+			font-size: 13px;
+			color: rgba(255, 255, 255, 0.8);
+			width: 80%;
+			margin: 0 auto;
+		}
+		.btn {
+			text-decoration: none;
+			background-color: tomato;
+			display: inline-block;
+			height: 33px;
+			width: 131px;
+			color: white;
+			border-radius: 15px;
+			line-height: 33px;
+			margin-top: 40px;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+		/* services */
+		#services {
+			padding: 80px;
+		}
+		#services .title {
+			font-size: 2em;
+			text-align: center;
+			text-transform: capitalize;
+		}
+		.item {
+			display: inline-block;
+			width: 24%;
+			padding: 10px;
+			text-align: center;
+		}
+		@media screen and (min-width: 1200px) {
+			.item {
+				padding: 30px;
+			}
+		}
+		.fa {
+			color: tomato;
+			font-size: 40px;
+		}
+		.service_name {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 1.2em;
+		}
+		.service_desc {
+			font-size: 0.8em;
+		}
+		
+		#pics img {
+			width:33.33%;
+			float:left;
+		}
+		#downloadnow {
+			clear: both;
+			height: 150px;
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="navbar">
+			<div id="logo">
+				START BOOTSTRAP
+			</div>
+			<ul>
+				<li><a href="#">ABOUT</a>
+				</li>
+				<li><a href="#">SERVICES</a>
+				</li>
+				<li><a href="#">PORTFOLIO</a>
+				</li>
+				<li><a href="#">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+		<div id="banner">
+			<div class="title">your favorite source of free bootstrap themes</div>
+			<hr>
+			<div class="subtitle">
+				Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+			</div>
+			<a class='btn' href="#">find out more</a>
+		</div>
+
+	</header>
+	<div id="services">
+		<div class="title">
+			at your service
+		</div>
+		<hr>
+		<div class="item">
+			<i class='fa fa-diamond'></i>
+			<div class="service_name">Sturdy Templates</div>
+			<div class="service_desc">
+				Our templates are updated regularly so they don't break
+			</div>
+		</div>
+		<div class="item">
+			<i class='fa fa-diamond'></i>
+			<div class="service_name">Sturdy Templates</div>
+			<div class="service_desc">
+				Our templates are updated regularly so they don't break
+			</div>
+		</div>
+		<div class="item">
+			<i class='fa fa-diamond'></i>
+			<div class="service_name">Sturdy Templates</div>
+			<div class="service_desc">
+				Our templates are updated regularly so they don't break
+			</div>
+		</div>
+		<div class="item">
+			<i class='fa fa-diamond'></i>
+			<div class="service_name">Sturdy Templates</div>
+			<div class="service_desc">
+				Our templates are updated regularly so they don't break
+			</div>
+		</div>
+	</div>
+	<div id="download">
+		<div id="pics">
+			<img src="./img/portfolio/1.jpg" alt="">
+			<img src="./img/portfolio/2.jpg" alt="">
+			<img src="./img/portfolio/3.jpg" alt="">
+			<img src="./img/portfolio/4.jpg" alt="">
+			<img src="./img/portfolio/5.jpg" alt="">
+			<img src="./img/portfolio/6.jpg" alt="">
+		</div>
+		<div id="downloadnow">
+			<div class="title">Free Download at Start Bootstrap</div>
+			<button>Download now</button>
+		</div>
+	</div>
+</body>
+
+</html>

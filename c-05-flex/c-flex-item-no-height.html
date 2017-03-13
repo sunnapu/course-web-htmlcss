@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        #container {
+            display:flex;
+            flex-wrap: wrap;
+            height: 300px;
+        }
+        
+        #container div {
+            flex-grow: 1;
+            background-color: lime;
+            border: solid red 1px;
+        } 
+        
+        @media screen and (max-width:648px) {
+            #container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div>1</div>
+    <div>2</div>
+    
+    <div>3 <br>
+    4</div>
+        
+    </div>
+    
+</body>
+</html>
