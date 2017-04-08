@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>table</title>
-    <style>
-        table {
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<style>
+		td {
+			padding: 5px 10px;
+			background-color: black;
+			color: lime;
+		}
+		
+		table {
+			border-color: tomato;
+			background-color: tomato;
             border-collapse: collapse;
-        }
-    </style>
+		}
+		
+		.name {
+			color: pink;
+		}
+	</style>
 </head>
-
 <body>
-    <h3>table(border), tr, th(width, height), td</h3>
-    <hr>
-    <h3>simple table</h3>
-
-    <table border="1">
-        <tr>
-            <th width="50px"></th>
-            <th width="100px">Name</th>
-            <th width="100px">Phone</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <td>Jason</td>
-            <td>519-111-1111</td>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td>John</td>
-            <td>226-111-1111</td>
-        </tr>
-    </table>
-
+	<table border>
+		<caption>Friends phone book</caption>
+		<tr>
+			<th>Name</th>
+			<th>Phone number</th>
+		</tr>
+		<tr>
+			<td class="name">John</td>
+			<td>123-456-7890</td>
+		</tr>
+		<tr>
+			<td class="name">Jennifer</td>
+			<td>098-765-4321</td>
+		</tr>
+		<tr>
+			<td class="name">Annica</td>
+			<td>555-555-5555</td>
+		</tr>
+	</table>
+    
     <h3>More complex Table</h3>
     <table border="1">
         <caption>Table caption</caption>
@@ -66,5 +74,4 @@
         </tfoot>
     </table>
 </body>
-
 </html>

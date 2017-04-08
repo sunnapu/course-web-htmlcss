@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>input</title>
+	<style>
+		input {
+			width: 156px;
+		}
+		
+		#radiogroup input {
+			width: 20px;
+		}
+		
+		#checkboxgroup input {
+			width: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form action="#">
+		<input type="text" placeholder="Your name">
+
+		<br>
+		<input type="password" required>
+
+		<br>
+		<input type="hidden">
+
+		<br>
+		<input max=10 min=10 type="number">
+
+		<br>
+		<input type="email" placeholder="email">
+
+		<br>
+		<input type="url">
+
+		<br>
+		<input type="tel">
+
+		<br>
+        <input min=1 max=20 value=1 type="range" oninput="updateRange(this.value)" onchange='updateRange(this.value)'>
+		<label id="num_people" for="">1</label>
+
+		<br>
+		<input type="color">
+
+		<br>
+		<input type="file">
+
+		<br>
+		<input type="search">
+
+		<br>
+		<div id="radiogroup">
+			<label>burger</label>
+			<input type="radio" name='food' checked>
+			<label for="">hot dog</label>
+			<input type="radio" name='food'>
+			<label for="">pizza</label>
+			<input type="radio" name='food'>
+		</div>
+
+		<div id="checkboxgroup">
+			<input type="checkbox">
+			<lable>Drink</lable>
+		</div>
+
+		<br>
+		<input type="submit">
+	</form>
+
+	<script>
+        function updateRange(val) {
+			var num_people = document.getElementById('num_people');
+			num_people.innerHTML = val;
+		}
+	</script>
+</body>
+
+</html>

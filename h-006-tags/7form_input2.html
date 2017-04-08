@@ -2,70 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>input 2</title>
-    <style>
-        form {
-            margin-bottom: 40px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>input 2</title>
+	<style>
+		form {
+			margin-bottom: 40px;
+		}
+	</style>
 </head>
 
 <body>
-    <form>
-        <!--
+	<form>
+		<!--
     222-222-2222 \d{3}-\d{3}-\d{4}
     2222222222 \d{3}-?\d{3}-?\d{4}
     1-222-222-2222 (\d-)?\d{3}-?\d{3}-?\d{4}
     12222222222
     (222)222-2222 (\d-)?\(?\d{3}\)?-?\d{3}-?\d{4}
     -->
-        <p>telephone input has no built-in validation, but can use pattern. <a href="http://www.regexr.com/">More about regular expression</a>, the pattern attribute works with the following input types: text, search, url, tel, email, and password.</p>
-        <input type="tel" name="tel" pattern="(\d-)?\d{3}-?\d{3}-?\d{4}">
-        
-        <input type="submit"> Color
-        <input type="color" name="color">
-        <input type="submit">
-    </form>
+		<p>telephone input has no built-in validation, but can use pattern. <a href="http://www.regexr.com/">More about regular expression</a>, the pattern attribute works with the following input types: text, search, url, tel, email, and password.</p>
+		<input type="tel" name="tel" pattern="(\d-)?\d{3}-?\d{3}-?\d{4}">
 
-    <form action="http://www.google.com/search">
-        <p>Check the url to see how the input text get encoded and sent to server</p>
-        <p>For searching, we need url and the query parameters. The query name must match the server's convention</p>
-        <input type="search" name='q' results=5 placeholder="search ...">
-        <input type="text" name='q' placeholder="search ...">
-        <input type="submit">
-    </form>
+		<input type="submit"> Color
+		<input type="color" name="color">
+		<input type="submit">
+	</form>
 
-    <form>
-        Number
-        <input type="number" name="number">
-        <input type="submit">
-    </form>
+	<form action="http://www.google.com/search">
+		<p>Check the url to see how the input text get encoded and sent to server</p>
+		<p>For searching, we need url and the query parameters. The query name must match the server's convention</p>
+		<input type="search" name='q' results=5 placeholder="search ...">
+		<input type="text" name='q' placeholder="search ...">
+		<input type="submit">
+	</form>
 
-    <form onsubmit="return false">
-        Range
-        <input type="range" name="range100"> Range
-        <input type="range" min="1" max="10" name="range10">
-        <input type="submit">
-    </form>
+	<form>
+		Number
+		<input type="number" name="number">
+		<input type="submit">
+	</form>
 
-    <form id="cal" oninput="o.value = a.valueAsNumber/b.valueAsNumber">
-        <p>The output tag represents the result of a calculation.</p>
-        <input name="a" type="number" step="any"> /
-        <input name="b" type="number" step="any"> =
-        <output name="o"></output>
-    </form>
+	<form onsubmit="return false">
+		Range
+		<input type="range" name="range100"> Range
+		<input type="range" min="1" max="10" name="range10">
+		<input type="submit">
+	</form>
 
-    <form>
-        <input list="food" name="food">
-        <datalist id="food">
-            <option value="Pizza">
-                <option value="Hotdog">
-                    <option value="Burger">
-                        <option value="Sandwich">
-        </datalist>
-        <input type="submit">
-    </form>
+	<form id="cal" oninput="o.value = a.valueAsNumber/b.valueAsNumber">
+		<p>The output tag represents the result of a calculation.</p>
+		<input name="a" type="number" step="any"> /
+		<input name="b" type="number" step="any"> =
+		<output name="o"></output>
+	</form>
+
+	<form>
+		<input list="food" name="food">
+		<datalist id="food">
+			<option value="Pizza">
+				<option value="Hotdog">
+					<option value="Burger">
+						<option value="Sandwich">
+		</datalist>
+		<input type="submit">
+	</form>
 </body>
 
 </html>
