@@ -2,33 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>form 2</title>
-    <style>
-        input[type='image'] {
-            border: solid yellow 2px;
-            border-radius: 22px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>button</title>
+	
+	<style>
+		input {
+			width: 100px;
+		}
+		
+		button img {
+			width: 100px;
+		}
+	</style>
 </head>
 
 <body>
 
-    <!--
-<p>
-    Reference: <a href="http://www.wufoo.com/html5/">Current state of html 5 form</a>
-</p>
--->
-    <h3>input[submit, image], button</h3>
-    <h3>Submit button</h3>
-    <input type="submit" value='subscribe now >>' onclick="alert('hi there')">
+	<form action="#">
+		<h3>Submit</h3>
+		<input type="submit" value="OK">
+		
+		<h3>Button</h3>
+		<input type="button" value="abc" onclick="alert('hello guys, you suck!')">
+		
+		<h3>Image button</h3>
+		<input id="imgbtn" type="image" src="img/puppy.jpg">
+		
+		<h3>More powerful button</h3>
+		<button type='submit'>
+			<img src="img/puppy.jpg" alt="">
+			<span>Image button</span>
+		</button>
+	</form>
 
-    <h3>A image button (disable default validate)</h3>
-    <input type="image" src='/images/dot.png' alt='image button' formnovalidate onclick="alert('hi see you again!')">
-
-    <h3>button element: allow more control how button looks like, allow other element inside the button</h3>
-    <button><img src="/images/icons/apple-touch-icon-114-precomposed.png" alt="dot" width='20' height='20'> Submit
-    </button>
+	<script>
+		var imgbtn=document.getElementById('imgbtn');
+		
+		imgbtn.addEventListener('click',changeimg);
+		
+		function changeimg(e) {
+			e.preventDefault();
+			imgbtn.src='https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg';
+		}
+	</script>
 </body>
 
 </html>

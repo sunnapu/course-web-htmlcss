@@ -19,6 +19,19 @@
 		.name {
 			color: pink;
 		}
+		
+		
+		td:first-child {
+			transition: all 0.5s linear;
+			position: relative;
+			left: 0px;
+			width: 100px;
+		}
+		td:first-child:hover {
+			background-color: tomato;
+			color: black;
+			left:50px;
+		}
 	</style>
 </head>
 <body>
@@ -33,13 +46,19 @@
 			<td>123-456-7890</td>
 		</tr>
 		<tr>
-			<td class="name">Jennifer</td>
+			<td rowspan=2 class="name">Jennifer</td>
 			<td>098-765-4321</td>
+		</tr>
+		<tr>
+			<td>123-456-7890</td>
 		</tr>
 		<tr>
 			<td class="name">Annica</td>
 			<td>555-555-5555</td>
 		</tr>
+		<tfoot>
+			<td colspan=2>Table foot</td>
+		</tfoot>
 	</table>
     
     <h3>More complex Table</h3>
