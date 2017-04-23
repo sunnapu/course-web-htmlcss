@@ -1,5 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="c-023-css-box-sizing.css">
+    <title>box sizing</title>
+    <style>
 * {
     box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
     /* sizing = content + padding + border */
     /* box-sizing: content-box; */
     /* sizing = content (only)*/
@@ -26,3 +36,14 @@
     display: inline-block;
     background-color: cadetblue;
 }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left"></div><!--
+        --><div class="right"></div>
+    </div>
+</body>
+
+</html>
