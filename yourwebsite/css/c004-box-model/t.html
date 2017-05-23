@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>3</title>
+	<style>
+		* {
+			
+		}
+		body {
+			background-color: gainsboro
+		}
+		
+		fieldset {
+			background-color: white;
+			box-shadow: 1px 5px 25px black;
+		}
+		
+		legend {
+			border: solid black 1px;
+			background-color: gainsboro;
+		}
+		
+		#name,
+		#email {
+			width: 225px;
+			margin-left: 100px;
+		}
+		
+		#phone {
+			width: 223px;
+			margin-left: 98px;
+		}
+		
+		#city {
+			margin-left: 110px;
+			width: 229px;
+		}
+		
+		#submit {
+			padding-left: 25px;
+			padding-right: 25px;
+			border: solid steelblue;
+			background-color: cornflowerblue;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			box-shadow: 1px 5px 10px black;
+			color: white;
+			margin-left: 399px;
+		}
+		
+		#submit:hover {
+			box-shadow: 0px 0px 0px gainsboro;
+		}
+		
+		#texta {
+			margin-left: 6px;
+			box-shadow: 1px 5px 25px black;
+		}
+		
+		#texta:hover {
+			box-shadow: 0px 0px 0px gainsboro;
+		}
+		
+		input[type='radio'] {
+			margin-left: 24px;
+		}
+		
+		
+		fieldset:hover {
+			box-shadow: 0px 0px 0px gainsboro;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="anyServerResource.php" method=''>
+		<fieldset>
+			<legend>Payment information</legend>
+			<label for="">Name</label>
+			<input type="text" name='name' id='name' placeholder="Please enter in your full name">
+			<br>
+			<br>
+			<label for="">Email</label>
+			<input type="email" id='email' name='email' placeholder="Please enter in your email">
+			<br>
+			<br>
+			<label for="">Phone</label>
+			<input type="phone" id='phone' name='phone' placeholder="Please enter in your phone number">
+			<br>
+			<br>
+			<label for="">City</label>
+			<select name="city" id="city">
+				<option value="London" name='london'>London</option>
+				<option value="toronto" name='toronto'>Toronto</option>
+				<option value="regina" name='regina'>Regina</option>
+			</select>
+			<br>
+			<br>
+			<label for="">Payment Options:</label>
+			<input type="radio" id="payment1" name='mastercard'>Master card
+			<input type="radio" id='payment2' name='vista'>Vista
+			<input type="radio" id='payment3' name='paypal'>Paypal
+		</fieldset>
+		<br>
+		<textarea name="comment" id="texta" cols="78" rows="10" placeholder="Enter in your comments or suggestions!"></textarea>
+		<input type="submit" id='submit'>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.container {
+			height: 200px;
+			background:linear-gradient(to right, aqua,lime);
+			
+			position: relative;
+		}
+		
+		.item {
+			height: 100px;
+			width: 100px;
+			background-color: tomato;
+		}
+		
+		#item1 {
+			position: relative;
+			top: 50px;
+			right: 50px;
+		}
+		
+		#item2 {
+			position: absolute;
+			top: 50px;
+			background-color: white;
+			right: 50px;
+		}
+		
+		#item3 {
+			position:fixed;
+			right: 50px;
+			bottom: 0;
+		}
+		
+	
+	</style>
+</head>
+<body>
+	
+	<h3>relative position is relative to its own original position, and occupies the space</h3>
+	<div class="container">
+		<div id='item1' class="item"></div>
+	</div>
+	
+	<h3>absolute position is relative to its nearest ancestor that has non-static position, not occupy the space</h3>
+	<div class="container">
+		<div id='item2' class="item"></div>
+	</div>
+	
+	<h3>fixed is relative to the viewport</h3>
+	<div class="container">
+		<div id='item3' class="item"></div>
+	</div>
+	
+</body>
+</html>

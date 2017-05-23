@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Box Shadow</title>
+		<style>
+/*            box-shadow: none|h-shadow v-shadow blur size_of_shadow color |inset|initial|inherit;*/
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: deepskyblue;
+				margin: 20px;
+				display: inline-block;
+            }
+			.one { 
+				box-shadow: 10px 10px grey;
+            }
+			.two {
+				box-shadow: 10px 10px 5px grey;
+            }  
+			.three {
+				box-shadow: 10px 10px 5px 20px grey;
+            } 
+			.four {
+				box-shadow: 10px 10px 0px grey;
+            }
+            .four:hover {
+                box-shadow: 10px 10px 0px grey, inset 0 0 100px grey;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="four"></div>
+	</body>
+</html>

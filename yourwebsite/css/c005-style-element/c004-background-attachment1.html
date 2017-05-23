@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		body {
+			height: 2000px;
+		}
+		
+		.container {
+			width: 600px;
+			height: 300px;
+			border: solid 1px purple;
+			background-image: url(../../img/happy-dog-200x200.jpg);
+			background-repeat: no-repeat;
+			
+			overflow: auto;
+		}
+		
+		.expand {
+			height: 400px;
+		}
+		
+		#scroll {
+			background-attachment: scroll;
+		}
+		
+		#local {
+			background-attachment: local;
+		}
+		
+		#fixed {
+			background-attachment: fixed;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h3>Scroll: background-image scrolls along with the element</h3>
+
+	<div class='container' id="scroll">
+		<div class="expand"></div>
+	</div>
+
+	<h3>Local: background-image scrolls along the local content</h3>
+	<div class='container' id="local">
+		<div class="expand"></div>
+	</div>
+	
+	<h3>Fixed: background-image to the viewport</h3>
+
+	<div class='container' id="fixed">
+	</div>
+</body>
+
+</html>

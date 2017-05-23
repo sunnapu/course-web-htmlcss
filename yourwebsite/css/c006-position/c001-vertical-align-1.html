@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>inline element align</title>
+    <style>
+        #text1, #text2 {
+            display: inline-block;
+            background-color: steelblue;
+            width: 182px;
+            font-size: 2em;
+            color: white;
+            border: solid tomato 2px;
+            margin-left: 50px;
+            text-align: center;
+        }
+        
+        #text1 {
+            height: 120px;
+        }
+        
+        #text2 {
+            height: 289px;
+        }
+        
+        #text1 {
+/*            vertical-align: top;*/
+        }
+            /* inline-blocks by default the vertical align value is baseline. The baseline changes depending on elements heights. if set vertical-align top to make the element alignment consistently starting at the top.*/
+            /* baseline for some elements are not defined in specification, means its behavior is different across browsers */
+        
+    </style>
+</head>
+
+<body>
+    <div id="text1">Text</div>
+    <div id="text2">Text Text Text Text Text Text Text Text</div>
+</body>
+
+</html>

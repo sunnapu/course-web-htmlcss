@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		div {
+			border: solid;
+			display: block;
+/*
+			height: 100px;
+			width: 200px;
+*/
+		}	
+		
+		#inline {
+			display: inline;
+			font-size: 2em;
+		}
+		
+		#inline-block {
+			display: inline-block;
+			width: 50px;
+			height: 20px;
+		}
+		
+		#none {
+			display: none;
+		}
+		
+		#notvisible {
+			visibility: hidden;
+			height: 50px;
+		}
+	</style>	
+</head>
+<body>
+	
+	<h1>block: no height</h1>
+	<div></div>
+	
+	<h1>inline: no width, and can't set width and height </h1>
+	<div id="inline">hello guys</div>
+	
+	<h1>inline-block: no width, no height, but they can be set</h1>
+	<div id="inline-block"></div>
+	
+	<h1>Not rendered</h1>
+	<div id="none"></div>
+	
+	<h1>Not visible</h1>
+	<div id="notvisible"></div>
+	<p>some text</p>
+	
+	
+	
+	
+</body>
+</html>

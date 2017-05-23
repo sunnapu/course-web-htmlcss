@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		#block{
+			border: solid red;
+			background-color: red;
+			
+/*			width: 300px;*/
+/*			height: 300px;*/
+		}
+		
+		#inline {
+			border: solid blue;
+			display: inline;
+			
+			width: 300px;
+			height: 300px;
+		}
+		
+		#inline-block {
+			display: inline-block;
+			border: solid;
+			
+			width: 100px;
+			height: 40px;
+		}
+		
+		#notrender {
+			width: 300px;
+			height: 100px;
+			
+			border: solid 10px;
+			display: none;
+		}
+		
+		#notvisible {
+			width: 300px;
+			height: 100px;
+			border: solid tomato;
+			
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>block: no height</h1>
+	<div id="block"></div>
+	
+	<h1>inline: no width, can not set width and height</h1>
+	<div id="inline">Content</div>
+	
+	<h1>inline-block: no width, no height, but can set</h1>
+	<div id="inline-block"></div>
+	
+	<h1>not render</h1>
+	<div id="notrender"></div>
+	
+	<h1>not visible</h1>
+	<div id="notvisible"></div>
+	
+	<footer>Footer</footer>
+</body>
+</html>

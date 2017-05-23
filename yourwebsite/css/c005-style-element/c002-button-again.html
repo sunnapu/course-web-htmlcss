@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a {
+            text-decoration: none;
+            
+            display: inline-block;
+            width: 200px; 
+            height: 50px; 
+            background-color: rebeccapurple;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 73px;
+            
+/*            good looking */
+            background: linear-gradient(to bottom right, rebeccapurple, #1d0426);
+            
+            user-select: none;
+        }
+        
+        div {
+            width: 200px; 
+            height: 50px; 
+            background-color: rebeccapurple;
+            color: white;
+            text-align: center;
+            border-radius: 73px;
+            line-height: 50px;
+            
+            background: linear-gradient(to bottom right, rebeccapurple, #1d0426);
+            
+            user-select: none;
+        }
+        
+        button {
+            width: 200px; 
+            height: 50px; 
+            background-color: rebeccapurple;
+            color: white;
+            
+            border: none;
+            border-radius: 73px;
+            
+            background: linear-gradient(to bottom right, rgb(21,21,21), rgb(100,100,100));
+            
+            outline: none;
+            
+            font-size: 12px;
+        }
+/*		line box*/
+        
+        a:active, button:active, div:active{
+            background: linear-gradient(to bottom right, #1d0426, rebeccapurple);
+        }
+        
+        div:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>by anchor</h1>
+    <a href="#">Submit</a>
+
+    <h1>by div</h1>
+    <div>Submit</div>
+
+    <h1>by button</h1>
+    <button>Submit</button>
+
+</body>
+</html>

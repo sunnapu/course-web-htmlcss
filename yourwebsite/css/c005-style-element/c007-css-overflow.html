@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        div.example {
+            width: 400px;
+            height: 124px;
+            border: solid blue 2px;
+            margin: 100px;
+        }
+        
+        .visible {
+            overflow: visible;
+            /* background image large than div, can't be visible even setting overflow to 'visible' */
+        }
+        
+        .hidden {
+            overflow: hidden;
+        }
+        
+        .scroll {
+            overflow: scroll;
+        }
+        /* make scrollbar alwaye visible */
+        
+        div.auto {
+            /* without div selector will not override the div.example */
+            
+            overflow: auto;
+        }
+        /* make scrollbar visible when necessary*/
+        
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 27px;
+            height: 20px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Visible</h3>
+    <div class='visible example'>
+        <img src="../../img/500-100.png">
+    </div>
+
+    <h3>Hidden</h3>
+    <div class='hidden example'>
+        <img src="../../img/500-100.png">
+    </div>
+
+    <h3>Scroll</h3>
+    <div class='scroll example'>
+        <img src="../../img/500-100.png">
+    </div>
+
+    <h3>Auto</h3>
+    <div class='auto example'>
+        <img src="../../img/500-100.png">
+    </div>
+</body>
+
+</html>

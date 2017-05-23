@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        div.wrap {
+            background: orange;
+        }
+        
+        div.wrap.fix {
+            overflow: hidden;
+            /* or 'auto' */
+        }
+        
+        div.floatleft {
+            float: left;
+            background: lightgreen;
+            width: 75%;
+        }
+        
+        div.floatright {
+            float: left;
+            background: lightblue;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h3>Problem: The wrapper div doesn't include its children</h3>
+        <div class="wrap">
+            <p>Wrapper</p>
+            <div class="floatleft">
+                float left
+            </div>
+            <div class="floatright">
+                float right
+            </div>
+        </div>
+
+        <br>
+
+        <h3>Fix: element with overflow applied auto or hidden will extend as large as it needs to include child elements that are floated; Can use Brackets feature - show element with border when cursor in a tag or use rect = element.getBoundingClientRect(); rect.bottom; rect.left; to check. </h3>
+        <div class="wrap fix">
+            <p>Wrapper</p>
+            <div class="floatleft">
+                float left
+            </div>
+            <div class="floatright">
+                float right
+            </div>
+        </div>
+    </section>
+
+    <script>
+    </script>
+</body>
+
+</html>
