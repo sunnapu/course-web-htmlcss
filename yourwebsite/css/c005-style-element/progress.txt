@@ -3,3 +3,11 @@
 c003-position
 c004-position-z-index
 c008-transform
+
+overflow
+overflow float
+box-shadow
+background-positon
+background-size
+float-clear
+
