@@ -1,0 +1,20 @@
+.container {
+    height: 300px;
+    border: solid;
+}
+.item {
+    color: red;
+    font-size: 40px;
+    border: double blue 1px;
+    text-align: center;
+}
+
+.low {
+    height: 40px;
+}
+.middle {
+    height: 60px;
+}
+.high {
+    height: 80px;
+}

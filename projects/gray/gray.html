@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		* {
+			padding:0;
+			margin:0;
+			box-sizing:border-box;
+		}
+		
+		#logo, #menu {
+			display: inline-block;
+		}
+		
+		#navbar {
+			border: solid 1px;
+			position: fixed;
+			width: 100%;
+			
+/*			padding: 30p 10%; */
+			text-transform: uppercase;
+		}
+		
+		#menu ul li {
+			display: inline-block;
+			padding: 0 10px;
+		}
+		
+		#menu ul li a {
+			text-decoration: none;
+			color: black;
+		}
+		
+		#menu {
+			position: absolute;
+			right:10%;
+		}
+		
+		#logo span {
+			font-weight: bold;
+		}
+		
+		/* banner */
+		#banner {
+			margin-top:50px;
+/*			padding: 200px 100px;*/
+			text-align: center;
+			background-image: url(img/intro-bg.jpg);
+			background-size:100%;
+		}
+		#banner h1 {
+			font-size: 6em;
+			text-transform: uppercase;
+			padding-bottom: 50px;
+		}
+		#banner p {
+			font-size: 25px;
+			padding-bottom: 50px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<div id="navbar">
+		<div id="logo">
+		<i class="fa fa-play-circle" aria-hidden="true"></i>
+		start <span>bootstrap</span></div>
+		<nav id='menu'>
+			<ul>
+				<li><a href="#">about</a></li>
+				<li><a href="#download">download</a></li>
+				<li><a href="contact">contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="banner">
+		<h1>grayscale</h1>
+		<p>A free, responsive, one page Bootstrap theme. <br>
+		Created by Start Bootstrap.</p>
+		<a href="">button</a>
+	</div>
+</body>
+</html>

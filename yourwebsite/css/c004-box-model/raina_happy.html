@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #back {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+        }
+        
+        #face {
+            width: 375px;
+            height: 375px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 211px;
+            background: linear-gradient(red, orange, yellow)
+        }
+        
+        #eye {
+            width: 105px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .r{
+           top: 78px;
+            left: 59px;  
+        }
+        .l{
+          top: 78px;
+            right: 63px;  
+        }
+        
+        #pupil {
+            width: 60px;
+            height: 71px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 49px;
+            left: 21px;
+        }
+        
+        #mouth {
+            position: absolute;
+            bottom: 63px;
+            left: 89px;
+            width: 177px;
+            height: 61px;
+            border: solid 13px;
+            border-top: none;
+            border-bottom-left-radius: 110px 81px;
+            border-bottom-right-radius: 110px 88px;
+        }
+        
+        #corner1 {
+            border: solid black 4px;
+            height: 6px;
+            width: 28px;
+            background-color: black;
+            border-radius: 50px;
+            transform: rotate(688deg);
+            position: absolute;
+            bottom: 126px;
+            left: 72px;
+        }
+        
+        #corner2 {
+            border: solid black 4px;
+            height: 6px;
+            width: 28px;
+            background-color: black;
+            border-radius: 50px;
+            transform: rotate(-146deg);
+            position: absolute;
+            bottom: 127px;
+            right: 72px;
+        }
+        .1{
+            
+        }
+        .2{
+            
+        }
+        #eyebrow1 {
+            width: 79px;
+            height: -1px;
+            border: solid 7px;
+            border-radius: 50px;
+            position: absolute;
+            top: 75px;
+            left: 65px;
+            transform: rotate(200deg)
+        }
+        
+        #eyebrow2 {
+            width: 79px;
+            height: -1px;
+            border: solid 7px;
+            border-radius: 50px;
+            position: absolute;
+            top: 76px;
+            right: 71px;
+            transform: rotate(-200deg)
+        }
+        
+        #yee {
+            width: 36px;
+            height: 52px;
+            background-color: red;
+            border-radius: 50px;
+            position: absolute;
+            top: 10px;
+            left: 13px;
+        }
+        
+        #lol {
+            width: 24px;
+            height: 28px;
+            background-color: purple;
+            border-radius: 50px;
+            position: absolute;
+            top: 10px;
+            left: 7px;
+        }
+        
+        #last {
+            width: 13px;
+            height: 14px;
+            background-color: black;
+            border-radius: 50px;
+            position: absolute;
+            top: 7px;
+            left: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <div id="face">
+            <div id="eye" class="r">
+                <div id="pupil">
+                    <div id="yee">
+                        <div id="lol">
+                            <div id="last"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="eye" class="l">
+                <div id="pupil">
+                    <div id="yee">
+                        <div id="lol">
+                            <div id="last"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mouth"></div>
+            <div id="corner1" class="1"></div>
+            <div id="corner2" class="2"></div>
+            <div id="eyebrow1"></div>
+            <div id="eyebrow2"></div>
+        </div>
+    </div>
+</body>
+</html>

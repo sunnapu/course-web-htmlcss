@@ -23,10 +23,13 @@
             width: 200px;
             height: 100px;
             line-height: 100px;
+			
+			text-align: center;
         }
         
         .container-with-img img {
             vertical-align: middle;
+			width:50%;
         }
         
         .container-for-div {
@@ -34,6 +37,7 @@
             width: 200px;
             height: 100px;
             line-height: 100px;
+			text-align: center;
         }
         
         .container-for-div div {
@@ -43,23 +47,6 @@
             /* div must be an inline element */
             display: inline-block;
             vertical-align: middle;
-        }
-        
-        .container-with-text1 {
-            width: 300px;
-            height: 200px;
-            border: solid tomato;
-            line-height: 200px;
-        }
-        
-        .container-with-text1 p {
-            margin-top: 0px;
-        }
-        
-        .spantext {
-            font-size: 100px;
-            vertical-align: middle;
-            border: solid blue 1px;
         }
     </style>
 </head>
@@ -82,7 +69,7 @@
     <br>
     <p>img in div</p>
     <div class="container-with-img">
-        <img src="../images/dot.png" alt="">
+        <img src="../../img/dog.jpg" alt="">
     </div>
     <br>
 
@@ -91,13 +78,6 @@
         <div></div>
     </div>
     <br>
-
-    <p>text</p>
-    <div class="container-with-text1">
-        <p>Make text vertical center <span class="spantext">I</span>
-        </p>
-    </div>
-
 </body>
 
 </html>

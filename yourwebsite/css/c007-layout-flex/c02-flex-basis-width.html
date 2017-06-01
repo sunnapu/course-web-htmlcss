@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            border: double green;
+            font-size: 3em;
+        }
+        
+        .container .item:first-child {
+            background-color: red;
+        }
+        .container .item:nth-child(2){
+            background-color: green;
+        }
+        .container .item:last-child {
+            background-color: blue;
+        }
+        
+        /* width */
+        .container.width .item {
+/*            width: auto;*/
+            width: 0;
+        }
+        
+        /* flex-basis */
+        .container.flex-basis {
+            display: flex;
+        }
+        
+        .container.flex-basis .item{
+/*            flex-basis: auto;   */
+            flex-basis: 0;
+/*            flex-grow: 1;*/
+            
+            /* specifies the initial main size of a flex item 
+            /* 'auto' is default */
+            /* flex-basis is the same as width, except 'auto' and '0' */
+            /* flex-basis:auto; means relative flex, the width of content is determined by the flex-grow.
+       width:auto; means the element default width.
+            
+       flex-basis:0; means absolute flex, the width will be determined by flex-grow.
+       width:0; means the width is 0
+    */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>width:0 vs flex-basis:0</h1>
+    <h1>width:auto vs flex-basis:auto</h1>
+    <div class="container width">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <div class="container flex-basis">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+
+</html>

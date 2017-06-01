@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #main {
+            width: 600px;
+            height: 600px;
+            background-color: lime;
+            position: relative;
+        }
+        #face {
+            width: 560px;
+            height: 560px;
+            background-color: yellow;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 50%;
+        }
+        #eyes1 {
+            position: absolute;
+            height: 200px;
+            width: 170px;
+            background-color: white;
+            border-radius: 50%;
+            left: 150px;
+            top: 100px
+        }
+        #eyes2 {
+            position: absolute;
+            height: 200px;
+            width: 170px;
+            background-color: white;
+            border-radius: 50%;
+            left: 330px;
+            top: 100px;
+        }
+        #black1 {
+            position: absolute;
+            background-color: black;
+            height: 115px;
+            width: 100px;
+            border-radius: 50px;
+            top: 20px;
+            left: 20px;
+        }
+        #black2 {
+            position: absolute;
+            background-color: black;
+            height: 115px;
+            width: 100px;
+            border-radius: 50px;
+            top: 20px;
+            left: 20px;
+        }
+        #mouth {
+            position: absolute;
+/*            background-color: black;*/
+            width: 216px;
+            height: 86px;
+            top: 350px;
+            left: 192px;
+            border-bottom-left-radius: 187px;
+            border-bottom-right-radius: 187px;
+			border: solid 10px;
+			border-top: none;
+/*            i dont know how to make the mouth like a smile so this is the best i can do*/
+        }
+        #curve1 {
+            height: 50px;
+            width: 20px;
+            background-color: black;
+            position: absolute;
+            left: -21px;
+            bottom: 61px;
+            transform: rotate(40deg);
+            border-radius: 10px;
+        }
+        #curve2 {
+            height: 50px;
+            width: 20px;
+            background-color: black;
+            position: absolute;
+            right: -25px;
+            bottom: 50px;
+            transform: rotate(320deg);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="face">
+            <div id="eyes1">
+                <div id="black1"></div>
+            </div>
+            <div id="eyes2">
+                <div id="black2"></div>
+            </div>
+            <div id="mouth">
+                <div id="curve1"></div>
+                <div id="curve2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

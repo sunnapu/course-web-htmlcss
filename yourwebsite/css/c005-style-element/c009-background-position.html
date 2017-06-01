@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>background size</title>
-    <style>
-        div {
-            width: 600px;
-            height: 400px;
-            border: solid skyblue;
-            background-image: url(../../img/dog.jpg);
-            background-repeat: no-repeat;
-        }
-        
-    /* left top, left center, left bottom;*/ 
-        .lefttop {
-/*            background-position: left top;*/
-            background-position: left;
-        }
-        
-    /* right top, right center, right bottom; */
-    /* center top, center center, center bottom; */
-    /* if only one value, the another value is 'center' */
-        .righttop{
-            background-position: right top;
-        }
-        
-        .percentage {
-            background-position: 50% 50%;
-        }
-    </style>
+	<style>
+		div {
+			width: 500px;
+			height: 300px;
+			
+			border: double blue;
+			
+			background-image:url(../../img/dog.jpg);
+			background-repeat: no-repeat;
+			
+            /* vertical horizontal */
+			background-position: bottom right;
+			
+            /* bottom center */
+			background-position: bottom;
+			
+            /* center center */
+			background-position: center;
+            
+			background-position: 100px center;
+		}
+	</style>
 </head>
-
 <body>
-    <h2>background-postion: left top;</h2>
-    <div class="lefttop">
-
-    </div>
-    <h2>background-position: right top;</h2>
-    <div class="righttop">
-
-    </div>
-    <h2>background-position: 50% 50%;</h2>
-    <div class="percentage">
-
-    </div>
+	<div></div>
 </body>
-
 </html>

@@ -5,6 +5,39 @@
     <meta charset="UTF-8">
     <title>CSS layout by flex</title>
     <link rel="stylesheet" href="c-039-css-layout-by-4-flex.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .container {
+            display: -webkit-flex;
+            display: flex;
+            border: solid #39466b 1px;
+            margin: 10px;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        section {
+            border: solid tomato 1px;
+        }
+        /* code to focus on */
+        
+        nav {
+            flex: 1;
+            /* 1 1 0 */
+        }
+        
+        .content {
+            flex: 4;
+            /* 4 1 0 */
+        }
+    </style>
 </head>
 
 <body>

@@ -19,8 +19,8 @@
     background: #433669;
     color: white;
     /* 1 */
+/*	top and bottom margin let browser calculate */
     margin: auto;
-    /* in 'normal content flow', margin 'auto' equals 0 for the top and bottom. In 'absolute' position, it is not in normal content flow, so the top and bottom will be calculated by browser */
     /* 2 */
     position: absolute;
     /* 3 steps */
@@ -31,9 +31,10 @@
 }
 
 img {
-    /* arbitray width and height */
     background: #433669;
     color: white;
+	width: 50%;
+	
     /* 1 */
     margin: auto;
     /* 2 */
@@ -59,7 +60,7 @@ img {
     <br>
     <p>image in div</p>
     <div class="container">
-        <img src="../images/dot.png" alt="">
+        <img src="../../img/dog.jpg" alt="">
     </div>
 </body>
 

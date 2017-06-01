@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+        * {
+            box-sizing: border-box;
+        }
+		.container {
+			width: 400px;
+			height: 100px;
+			
+			border: double blue;
+			
+			overflow: visible;
+			overflow: hidden;
+		}
+		
+		.scroll {
+            width: 521px;
+			overflow: scroll;
+		}
+		
+		.auto {
+            width: 521px;
+			overflow: auto;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<img src="../../img/500-100.png" alt="">
+	</div>
+	
+	<br>
+	<div class="container scroll">
+		<img src="../../img/500-100.png" alt="">
+	</div>
+	
+	<br>
+	<div class="container auto">
+		<img src="../../img/500-100.png" alt="">
+	</div>
+</body>
+</html>

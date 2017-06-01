@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        body:before {
-            content: "hello world";
-            background-color: black;
-            display: block;
-            width: 300px;
-            height: 200px;
-            font-size: 40px;
-            color: wheat;
-            text-align: center;
+        
+        body {
+            background-color: royalblue;
+        }
+        h1 {
+            width: 600px;
+            height: 50px;
+            background-color: rgba(0,0,0,0.6);
+            
+            line-height: 50px;
+            color: white;
+        }
+        h1:before {
+            content:'';
+            width:10px;
+            height: 50px;
+            background-color:red;
+            display:inline-block;
+            
+            vertical-align:-14px;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
-    
+    <h1><span>It's okay to be silly.</span></h1> 
+    <h1><span>It's okay to be silly.</span></h1> 
+    <h1><span>It's okay to be silly.</span></h1> 
 </body>
 </html>

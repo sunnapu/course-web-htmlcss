@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<style>
+		div {
+			border: solid red;
+		}
+		#inlblock {
+			display:inline-block;
+			width: 10px;
+			height: 10px;
+		}
+		#inline {
+			display: inline;
+			line-height: 65px;
+		}
+		#none {
+			display:none;
+		}
+		
+		#visible {
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<h2>block: height 0</h2>
+	<div></div>
+	
+	<h2>inline-block: height 0, width 0, but can set width/height </h2>
+	<div id="inlblock"></div>
+	
+	<h2>inline: width 0, can't set width/height, width is content width</h2>
+	<div id="inline">Text</div>
+	
+	<h2>none</h2>
+	<div id="none"></div>
+	
+	<h2>visible</h2>
+	<div id="visible"></div>
+	<p>Text</p>
+</body>
+</html>

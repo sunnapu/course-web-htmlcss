@@ -1,60 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>background size</title>
-    <style>
-        div {
-            width: 300px;
-            height: 300px;
-            border: solid skyblue;
-            background-image: url(../../img/dog.jpg);
-            background-repeat: no-repeat;
-        }
-        
-        .auto {
-            background-size: auto;
-        }
-        
-        .cover {
-            background-size: cover;
-        }
-        
-        .contain {
-            background-size: contain;
-        }
-        
-        .pixel {
-/*
-            background-size only for background images
-            background-image: none;
-            background-color: aqua;
-*/
-/*            width is 100px, height is auto */
-            background-size: 100px; /* == 100px auto */
-            
-        }
-    </style>
+	<style>
+		div {
+			border: double blue;
+			height: 400px;
+			width: 400px;
+			
+			background-image: url(../../img/dog.jpg);
+			background-repeat: no-repeat;
+			
+			background-size: auto;
+			background-size: contain;
+			background-size: cover;
+            background-size: 200px;
+		}
+	</style>
 </head>
-
 <body>
-    <h2>background-size: auto;</h2>
-    <div class="auto">
-
-    </div>
-    <h2>background-size: cover;</h2>
-    <div class="cover">
-
-    </div>
-    <h2>background-size: contain;</h2>
-    <div class="contain">
-
-    </div>
-    <h2>background-size: 100px;</h2>
-    <div class="pixel">
-
-    </div>
+	<div></div>
 </body>
-
 </html>
