@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="c01.css">
+    <style>
+    .container {
+            display: flex;
+           
+            /* layout */
+            flex-direction: row;
+            /* row, row-reverse, column, column-reverse */
+        
+            flex-wrap: wrap;
+        
+            flex-flow: row wrap;
+        
+/*            justify-content: flex-end;*/
+            /* flex-start, flex-end, center, space-between, space-around */
+        
+/*            align-items: flex-end;*/
+            /* flex-start, flex-end, center, baseline, stretch */
+        
+            align-content: space-around;
+            /* flex-start, flex-end, center, space-between, space-around, stretch */
+        }
+        
+        .item {
+            flex-basis: 30%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id='i1' class="item low">1</div>
+        <div id='i2' class="item middle">2</div>
+        <div id='i3' class="item high">3</div>
+        <div id='i4' class="item low">4</div>
+        <div id='i5' class="item middle">5</div>
+        <div id='i6' class="item high">6</div>
+    </div>
+</body>
+
+</html>
