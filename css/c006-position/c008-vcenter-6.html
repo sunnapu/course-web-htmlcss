@@ -1,83 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>CSS center</title>
-    <style>
-        .container-with-text {
-            border: solid #59488b 2px;
-            width: 200px;
-            height: 100px;
-            line-height: 100px;
-        }
+	<style>
+		body {
+			padding-left: 50px;
+		}
         
-        .container-with-text>p {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 1.2em;
-        }
-        
-        .container-with-img {
-            border: solid #59488b 2px;
-            width: 200px;
-            height: 100px;
-            line-height: 100px;
+		* {
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		#container {
+			width: 200px;
+			height: 100px;
+			background-color: black;
+            position: relative;
 			
-			text-align: center;
-        }
-        
-        .container-with-img img {
-            vertical-align: middle;
-			width:50%;
-        }
-        
-        .container-for-div {
-            border: solid #59488b 2px;
-            width: 200px;
-            height: 100px;
-            line-height: 100px;
-			text-align: center;
-        }
-        
-        .container-for-div div {
-            width: 40px;
-            height: 40px;
-            background-color: aqua;
-            /* div must be an inline element */
-            display: inline-block;
-            vertical-align: middle;
-        }
-    </style>
+			line-height: 100px;
+            text-align: center;
+		}
+		
+		#item {
+			width: 100px;
+			height: 50px;
+			background-color: gray;
+			
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.filling {
+			height: 25px;
+			width: 25px;
+			background-color: blue;
+			
+			position: absolute;
+            left: 50px;
+		}
+		.bottom {
+			top: 77px;
+		}
+		
+		
+		
+		
+	</style>
+	
+	
 </head>
-
 <body>
-    <h1>Vertical center</h1>
-    <h3>6: line-height, vertical-align: middle</h3>
-    <p>text in div</p>
-    <div class="container-with-text">
-        Content content content outof container
-    </div>
-    <br>
-    <br>
-    <p>p in div</p>
-    <div class="container-with-text">
-        <p>Content content content outof container</p>
-    </div>
-
-    <br>
-    <br>
-    <p>img in div</p>
-    <div class="container-with-img">
-        <img src="../../img/dog.jpg" alt="">
-    </div>
-    <br>
-
-    <p>div in div</p>
-    <div class="container-for-div">
-        <div></div>
-    </div>
-    <br>
+	<h1>vertical align</h1>
+	<div id="container">
+		<div class="filling"></div>
+		<div id="item"></div>
+		<div class="filling bottom"></div>
+	</div>
 </body>
-
 </html>

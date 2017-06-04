@@ -11,3 +11,8 @@ background-positon
 background-size
 float-clear
 content
+
+google page implement hard points
+vcenter-1,2,3,4
+hcenter-1,2
+c007-layout, by position
