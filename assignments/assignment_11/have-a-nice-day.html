@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        #face {
+            border: solid 10px;
+            width: 200px;
+            height: 200px;
+            
+            background-color: #C70400;
+            
+            position: relative;
+            
+            box-shadow: 0px 0px 10px 11px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        
+        .eye {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            
+            border-radius: 50%;
+            
+            position: absolute;
+            top: 61px;
+        }
+        
+        #eyeleft {
+            left: 45px;
+        }
+        #eyeright {
+            right: 45px;
+        }
+        
+        .eyebrow {
+            position: absolute;
+            top: 40px;
+            
+            width: 48px;
+            border: solid 7px;
+            border-radius: 7px;
+        }
+        
+        #eyebrowleft {
+            left: 37px;
+            transform: rotate(34deg);
+        }
+        #eyebrowright {
+            right: 37px;
+            transform: rotate(-34deg);
+        }
+        
+        .eyebrow .corner {
+            width: 14px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+        }
+        
+        #eyebrowleft .corner {
+            left: -11px;
+            top: -7px;
+            
+            transform: rotate(24deg);
+            
+        }
+        #eyebrowright .corner {
+            left: 30px;
+            top: -7px;
+            
+            transform: rotate(-24deg);
+            
+        }
+        
+        
+        #mouth  {
+            width: 128px;
+            height: 62px;
+            border: solid 10px;
+            position: absolute;
+            top: 108px;
+            left: 29px;
+            
+            border-top: none;
+            transform: rotate(-9deg);
+            border-bottom-right-radius: 112px;
+            border-bottom-left-radius: 112px;
+            
+        }
+        .mouthcorner {
+            position: absolute;
+            width: 16px;
+            border: solid 4px;
+            border-radius: 4px;
+            top: -4px;
+        }
+        #mouthcorner11 {
+            right: -17px;
+            transform: rotate(-11deg);
+        }
+        #mouthcorner12 {
+            right: -8px;
+            transform: rotate(14deg);
+        }
+        #mouthcorner13 {
+            width: 10px;
+            height: 10px;
+            border: none;
+            background-color: black;
+            border-radius: 50%;
+            top:-4px;
+            left: -10px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="face">
+       <div id="eyebrowleft" class="eyebrow">
+           <div class="corner"></div>
+       </div>
+       <div id="eyebrowright" class="eyebrow">
+           <div class="corner"></div>
+       </div>
+       <div id="eyeleft" class="eye"></div>
+       <div id="eyeright" class="eye"></div>
+       <div id="mouth">
+           <div id="mouthcorner11" class="mouthcorner"></div>
+           <div id="mouthcorner12" class="mouthcorner"></div>
+           <div id="mouthcorner13" class="mouthcorner"></div>
+       </div>
+       
+   </div>
+    <h1>have a nice day</h1>
+    
+    
+</body>
+</html>

@@ -2,13 +2,9 @@
 <html lang="en">
 <head>
 	<style>
-        * {
-            box-sizing: border-box;
-        }
 		.container {
 			width: 400px;
-			height: 100px;
-			
+			height: 118px;
 			border: double blue;
 			
 			overflow: visible;
@@ -16,30 +12,37 @@
 		}
 		
 		.scroll {
-            width: 521px;
 			overflow: scroll;
 		}
 		
 		.auto {
-            width: 521px;
 			overflow: auto;
 		}
+		
+		::-webkit-scrollbar { 
+			width: 10px;
+		}
+		
+		::-webkit-scrollbar-thumb {
+			background: black; 
+		}
 	</style>
-	
 </head>
 <body>
+	
 	<div class="container">
-		<img src="../../img/500-100.png" alt="">
+		<img src="../../media/img/500-100.png" alt="">
 	</div>
 	
-	<br>
+	<h2>Scroll</h2>
 	<div class="container scroll">
-		<img src="../../img/500-100.png" alt="">
+		<img src="../../media/img/500-100.png" alt="">
 	</div>
 	
-	<br>
+	<h2>Auto</h2>
 	<div class="container auto">
-		<img src="../../img/500-100.png" alt="">
+		<img src="../../media/img/500-100.png" alt="">
 	</div>
+	
 </body>
 </html>

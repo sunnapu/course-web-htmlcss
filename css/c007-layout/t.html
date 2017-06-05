@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Face</title>
+
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+        
+        #circle {
+            width: 400px;
+            height: 400px;
+            border-radius: 400px;
+            background-color: yellow;
+        }
+        
+        #eye,
+        #eye1 {
+            bottom: 200px;
+            right: 100px;
+            width: 50px;
+            height: 75px;
+            background-color: black;
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 60px;
+        }
+        
+        #eye {
+            margin-left: 75px;
+        }
+        
+        #mouth {
+            width: 200px;
+            height: 10px;
+            margin-top: 100px;
+            margin-left: 40px;
+            background-color: black;
+        }
+        
+        #corner,
+        #corner1 {
+            height: 20px;
+            width: 10px;
+            background-color: black;
+            margin-right: -50px;
+            margin-left: 50px;
+        }
+        
+        #corner1 {
+            margin-left: -10px;
+            margin-right: 0;
+        }
+        
+        #corner,
+        #mouth,
+        #corner1 {
+            display: inline-block;
+        }
+        
+        #inside {
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=container>
+        <div id=circle>
+            <div id="eye">
+                <div id="inside"></div>
+            </div>
+            <div id="eye1"></div>
+            <br>
+            <div id="corner"></div>
+            <div id="mouth"></div>
+            <div id="corner1"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
